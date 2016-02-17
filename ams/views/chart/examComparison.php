@@ -47,7 +47,7 @@ if (isset($_POST['Exam'])) {
 
             <?php
             $data = CHtml::listData(User::model()->findAll(), 'id', 'name');
-            $this->widget('common.extensions.EchMultiSelect.EchMultiSelect', array(
+            $this->widget('application.extensions.EchMultiSelect.EchMultiSelect', array(
                 'model' => $modelUser,
                 'dropDownAttribute' => 'id',
                 'data' => $data,
@@ -75,7 +75,7 @@ if (isset($_POST['Exam'])) {
             <?php
             $data = CHtml::listData(Exam::model()->findAll(), 'id', 'name');
 
-            $this->widget('common.extensions.EchMultiSelect.EchMultiSelect', array(
+            $this->widget('application.extensions.EchMultiSelect.EchMultiSelect', array(
                 'model' => $modelExam,
                 'dropDownAttribute' => 'id',
                 'data' => $data,

@@ -10,36 +10,6 @@ class TestController extends Controller {
      */
     public $layout = 'main';
 
-    public function filters() {
-        return array(
-            'accessControl', // perform access control for CRUD operations
-        );
-    }
-
-    public function accessRules() {
-        return array(
-            array('allow', // c
-                'actions' => array('create'),
-                'expression' => 'app()->controller->isValidAccess("Test","c")'
-            ),
-            array('allow', // r
-                'actions' => array('index', 'view', 'stats', 'statsLi'),
-                'expression' => 'app()->controller->isValidAccess("Test","r")'
-            ),
-            array('allow', // u
-                'actions' => array('update'),
-                'expression' => 'app()->controller->isValidAccess("Test","u")'
-            ),
-            array('allow', // d
-                'actions' => array('delete'),
-                'expression' => 'app()->controller->isValidAccess("Test","d")'
-            ),
-            array('allow', // read for , mulai ujian
-                'actions' => array('onGoing', 'finish', 'go'),
-                'expression' => 'app()->controller->isValidAccess("Ongoing","r")'
-            )
-        );
-    }
 
     /**
      * Displays a particular model.
@@ -359,7 +329,7 @@ class TestController extends Controller {
 
     public function actionResultDetail($id) {
         // exam id stored in session
-//        session_start();
+        session_start();
 //        $session = session();
 //        if (empty($session['exam_detail_answer'])){
 //            $session['exam_detail_answer'] = array($id => $_POST['choice']);

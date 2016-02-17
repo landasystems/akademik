@@ -82,7 +82,7 @@ $this->setPageTitle('UJIAN ONLINE :: ' . $model->name);
             <span class="icon16 icon-time pull-left"></span>
             <span class="pull-left">
                 <?php
-                $this->widget('common.extensions.ecountdown.ECountDown', array(
+                $this->widget('application.extensions.ecountdown.ECountDown', array(
                     'seconds' => strtotime($model->date_test . ' ' . $model->time_end) - strtotime(date('Y-m-d H:i:s')),
                     'follow' => url('test/finish/' . $model->id)
                 ));

@@ -55,7 +55,7 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 
 <div class="well">
     <?php
-    $this->widget('common.extensions.dualselect.DualSelect', array('title' => array('box1View' => 'Belum mendapatkan Kelas', 'box2View' => 'Murid yang yang menempati Kelas'),
+    $this->widget('application.extensions.dualselect.DualSelect', array('title' => array('box1View' => 'Belum mendapatkan Kelas', 'box2View' => 'Murid yang yang menempati Kelas'),
         'value' => array('box1View' => Classroom::model()->haventClass, 'box2View' => array())));
     ?>
 

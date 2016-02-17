@@ -1,6 +1,5 @@
 <?php
 Yii::setPathOfAlias('', $root);
-Yii::setPathOfAlias('common', $root . DIRECTORY_SEPARATOR . 'common');
 
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
@@ -8,12 +7,12 @@ return array(
     'preload' => array('log', 'bootstrap'),
     'import' => array(
         'application.models.*',
-        'common.components.*',
-        'common.extensions.*',
-        'common.extensions.image.helpers.*',
+        'application.components.*',
+        'application.extensions.*',
+        'application.extensions.image.helpers.*',
     ),
     'aliases' => array(
-        'xupload' => 'common.extensions.xupload'
+        'xupload' => 'application.extensions.xupload'
     ),
     'components' => array(
         'db' => array(
@@ -51,7 +50,7 @@ return array(
             'class' => 'CLogRouter',
             'routes' => array(
                 array(
-                    'class' => 'common.extensions.yii-debug-toolbar.YiiDebugToolbarRoute',
+                    'class' => 'application.extensions.yii-debug-toolbar.YiiDebugToolbarRoute',
                     'ipFilters' => array('127.0.0.1', '192.168.1.11'),
                 ),
                 array(
@@ -61,17 +60,17 @@ return array(
             ),
         ),
         'bootstrap' => array(
-            'class' => 'common.extensions.bootstrap.components.Bootstrap',
+            'class' => 'application.extensions.bootstrap.components.Bootstrap',
             'responsiveCss' => true,
             'fontAwesomeCss' => true,
         ),
         'image' => array(
-            'class' => 'common.extensions.image.CImageComponent',
+            'class' => 'application.extensions.image.CImageComponent',
             'driver' => 'GD',
             'params' => array('directory' => '/opt/local/bin'),
         ),
         'themeManager' => array(
-            'basePath' => $root . 'common/themes/',
+            'basePath' => $root . 'ams/themes/',
         ),
         'cache' => array(
             'class' => 'system.caching.CFileCache'

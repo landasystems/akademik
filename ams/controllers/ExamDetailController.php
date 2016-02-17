@@ -10,33 +10,7 @@ class ExamDetailController extends Controller {
      */
     public $layout = 'main';
 
-    public function filters() {
-        return array(
-            'accessControl', // perform access control for CRUD operations
-        );
-    }
-
-    public function accessRules() {
-        return array(
-            array('allow', // c
-                'actions' => array('create'),
-                'expression' => 'app()->controller->isValidAccess("Exam","c")'
-            ),
-            array('allow', // r
-                'actions' => array('index', 'view'),
-                'expression' => 'app()->controller->isValidAccess("Exam","r")'
-            ),
-            array('allow', // u
-                'actions' => array('index', 'update'),
-                'expression' => 'app()->controller->isValidAccess("Exam","u")'
-            ),
-            array('allow', // d
-                'actions' => array('index', 'delete'),
-                'expression' => 'app()->controller->isValidAccess("Exam","d")'
-            )
-        );
-    }
-
+ 
     /**
      * Displays a particular model.
      * @param integer $id the ID of the model to be displayed

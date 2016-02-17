@@ -10,33 +10,7 @@ class DownloadController extends Controller {
      */
     public $layout = 'main';
 
-    public function filters() {
-        return array(
-            'accessControl', // perform access control for CRUD operations
-        );
-    }
-
-    public function accessRules() {
-        return array(
-            array('allow', // c
-                'actions' => array('upload'),
-                'expression' => 'app()->controller->isValidAccess("Download","c")'
-            ),
-            array('allow', // r
-                'actions' => array('index', 'view', 'create'),
-                'expression' => 'app()->controller->isValidAccess("Download","r")'
-            ),
-            array('allow', // u
-                'actions' => array('update'),
-                'expression' => 'app()->controller->isValidAccess("Download","u")'
-            ),
-            array('allow', // d
-                'actions' => array('delete'),
-                'expression' => 'app()->controller->isValidAccess("Download","d")'
-            )
-        );
-    }
-
+   
     /**
      * Displays a particular model.
      * @param integer $id the ID of the model to be displayed
@@ -204,73 +178,13 @@ class DownloadController extends Controller {
         }
     }
 
-    public function actionGenerateExcel() {
-        $session = new CHttpSession;
-        $session->open();
-
-        if (isset($session['Download_records'])) {
-            $model = $session['Download_records'];
-        }
-        else
-            $model = Download::model()->findAll();
-
-
-        Yii::app()->request->sendFile(date('YmdHis') . '.xls', $this->renderPartial('excelReport', array(
-                    'model' => $model
-                        ), true)
-        );
-    }
-
-    public function actionGeneratePdf() {
-
-        $session = new CHttpSession;
-        $session->open();
-        Yii::import('application.modules.admin.extensions.giiplus.bootstrap.*');
-        require_once(Yii::getPathOfAlias('common') . '/extensions/tcpdf/tcpdf.php');
-        require_once(Yii::getPathOfAlias('common') . '/extensions/tcpdf/config/lang/eng.php');
-
-        if (isset($session['Download_records'])) {
-            $model = $session['Download_records'];
-        }
-        else
-            $model = Download::model()->findAll();
-
-
-
-        $html = $this->renderPartial('expenseGridtoReport', array(
-            'model' => $model
-                ), true);
-
-        //die($html);
-
-        $pdf = new TCPDF();
-        $pdf->SetCreator(PDF_CREATOR);
-        $pdf->SetAuthor(Yii::app()->name);
-        $pdf->SetTitle('Laporan Download');
-        $pdf->SetSubject('Laporan Download Report');
-        //$pdf->SetKeywords('example, text, report');
-        $pdf->SetHeaderData('', 0, "Report", '');
-        //$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, "Laporan" Download, "");
-        $pdf->SetHeaderData("", "", "Laporan Download", "");
-        $pdf->setHeaderFont(Array('helvetica', '', 8));
-        $pdf->setFooterFont(Array('helvetica', '', 6));
-        $pdf->SetMargins(15, 18, 15);
-        $pdf->SetHeaderMargin(5);
-        $pdf->SetFooterMargin(10);
-        $pdf->SetAutoPageBreak(TRUE, 0);
-        $pdf->SetFont('dejavusans', '', 7);
-        $pdf->AddPage();
-        $pdf->writeHTML($html, true, false, true, false, '');
-        $pdf->LastPage();
-        $pdf->Output("Download_002.pdf", "I");
-    }
-
+    
     public function actionUpload() {
 
 
         $download_category = DownloadCategory::model()->findByPk($_GET['id']);
 
-        Yii::import("common.extensions.EAjaxUpload.qqFileUploader");
+        Yii::import("application.extensions.EAjaxUpload.qqFileUploader");
 
         $folder = 'images/' . $download_category->path; // folder for uploaded files
         Yii::log($folder, 'info');

@@ -10,36 +10,6 @@ class SiteConfigHolidayController extends Controller
 	public $layout='main';
 
 	/**
-	 * @return array action filters
-	 */
-	public function filters() {
-            return array(
-                'accessControl', // perform access control for CRUD operations
-            );
-        }
-
-        public function accessRules() {
-            return array(
-                array('allow', // c
-                    'actions' => array('index', 'create'),
-                    'expression' => 'app()->controller->isValidAccess(1,"c")'
-                ),
-                array('allow', // r
-                    'actions' => array('index', 'view'),
-                    'expression' => 'app()->controller->isValidAccess(1,"r")'
-                ),
-                array('allow', // u
-                    'actions' => array('index', 'update'),
-                    'expression' => 'app()->controller->isValidAccess(1,"u")'
-                ),
-                array('allow', // d
-                    'actions' => array('index', 'delete'),
-                    'expression' => 'app()->controller->isValidAccess(1,"d")'
-                )
-            );
-        }
-
-	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
@@ -191,68 +161,5 @@ class SiteConfigHolidayController extends Controller
 			Yii::app()->end();
 		}
 	}
-        public function actionGenerateExcel()
-	{
-            $session=new CHttpSession;
-            $session->open();		
-            
-             if(isset($session['SiteConfigHoliday_records']))
-               {
-                $model=$session['SiteConfigHoliday_records'];
-               }
-               else
-                 $model = SiteConfigHoliday::model()->findAll();
-
-		
-		Yii::app()->request->sendFile(date('YmdHis').'.xls',
-			$this->renderPartial('excelReport', array(
-				'model'=>$model
-			), true)
-		);
-	}
-        public function actionGeneratePdf() 
-	{
-           
-           $session=new CHttpSession;
-           $session->open();
-		Yii::import('application.modules.admin.extensions.giiplus.bootstrap.*');
-		require_once(Yii::getPathOfAlias('common').'/extensions/tcpdf/tcpdf.php');
-		require_once(Yii::getPathOfAlias('common').'/extensions/tcpdf/config/lang/eng.php');
-
-             if(isset($session['SiteConfigHoliday_records']))
-               {
-                $model=$session['SiteConfigHoliday_records'];
-               }
-               else
-                 $model = SiteConfigHoliday::model()->findAll();
-
-
-
-		$html = $this->renderPartial('expenseGridtoReport', array(
-			'model'=>$model
-		), true);
-		
-		//die($html);
-		
-		$pdf = new TCPDF();
-		$pdf->SetCreator(PDF_CREATOR);
-		$pdf->SetAuthor(Yii::app()->name);
-		$pdf->SetTitle('Laporan SiteConfigHoliday');
-		$pdf->SetSubject('Laporan SiteConfigHoliday Report');
-		//$pdf->SetKeywords('example, text, report');
-		$pdf->SetHeaderData('', 0, "Report", '');
-		//$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, "Laporan" SiteConfigHoliday, "");
-		$pdf->SetHeaderData("", "", "Laporan SiteConfigHoliday", "");
-		$pdf->setHeaderFont(Array('helvetica', '', 8));
-		$pdf->setFooterFont(Array('helvetica', '', 6));
-		$pdf->SetMargins(15, 18, 15);
-		$pdf->SetHeaderMargin(5);
-		$pdf->SetFooterMargin(10);
-		$pdf->SetAutoPageBreak(TRUE, 0);
-		$pdf->SetFont('dejavusans', '', 7);
-		$pdf->AddPage();
-		$pdf->writeHTML($html, true, false, true, false, '');
-		$pdf->LastPage();
-		$pdf->Output("SiteConfigHoliday_002.pdf", "I");
-	}
+       
 }

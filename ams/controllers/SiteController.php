@@ -99,7 +99,7 @@ class SiteController extends Controller {
                 $userLog = new UserLog;
                 $userLog->save();
 
-                $this->redirect(Yii::app()->user->returnUrl);
+                $this->redirect(bu('index.php'));
             }
         }
         // display the login form

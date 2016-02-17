@@ -1,3 +1,10 @@
+<style>
+    @media (min-width: 1200px){
+        .row-fluid [class*="span"] {
+            min-height: 0;
+        }
+    }
+</style>
 <?php
 $this->setPageTitle('Users');
 $this->breadcrumbs = array(
@@ -20,12 +27,12 @@ $('.search-form form').submit(function(){
 
 <?php
 $svisible = "";
-if ($type == "teacher") {
-    $svisible = landa()->checkAccess('Teacher', 'c');
-} elseif ($type == "student") {
+if ($type == "student") {
+    $url = Yii::app()->controller->createUrl('student');
     $svisible = landa()->checkAccess('Student', 'c');
 } else {
-    $svisible = landa()->checkAccess('User', 'c');
+    $url = Yii::app()->controller->createUrl('index');
+    $svisible = landa()->checkAccess('Teacher', 'c');
 }
 $this->beginWidget('zii.widgets.CPortlet', array(
     'htmlOptions' => array(
@@ -36,10 +43,8 @@ $this->widget('bootstrap.widgets.TbMenu', array(
     'type' => 'pills',
     'items' => array(
         array('visible' => $svisible, 'label' => 'Tambah', 'icon' => 'icon-plus', 'url' => Yii::app()->controller->createUrl('create', array('type' => $type)), 'linkOptions' => array(), 'visible' => landa()->checkAccess('User', 'c')),
-        array('label' => 'Daftar', 'icon' => 'icon-th-list', 'url' => Yii::app()->controller->createUrl('index'), 'active' => true, 'linkOptions' => array()),
+        array('label' => 'Daftar', 'icon' => 'icon-th-list', 'url' => $url, 'active' => true, 'linkOptions' => array()),
         array('label' => 'Pencarian', 'icon' => 'icon-search', 'url' => '#', 'linkOptions' => array('class' => 'search-button')),
-        
-        
     ),
 ));
 $this->endWidget();

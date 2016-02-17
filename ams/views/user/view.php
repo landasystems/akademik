@@ -1,9 +1,11 @@
 <?php
 $this->setPageTitle('Lihat Users | ID : ' . $model->id);
-$this->breadcrumbs = array(
-    'Users' => array('index'),
-    $model->name,
-);
+
+if ($type == "student") {
+    $url = bu('user/student');
+} else {
+    $url = bu('user');
+}
 ?>
 
 <?php
@@ -17,7 +19,7 @@ if (landa()->checkAccess('User.Index','r')) {
         'type' => 'pills',
         'items' => array(
             array('label' => 'Tambah', 'icon' => 'icon-plus', 'url' => Yii::app()->controller->createUrl('create',array('type'=>$type)), 'linkOptions' => array()),
-            array('label' => 'Daftar', 'icon' => 'icon-th-list', 'url' => Yii::app()->controller->createUrl($type), 'linkOptions' => array()),
+            array('label' => 'Daftar', 'icon' => 'icon-th-list', 'url' => $type, 'linkOptions' => array()),
             array('label' => 'Edit', 'icon' => 'icon-edit', 'url' => Yii::app()->controller->createUrl('update', array('id' => $model->id,'type'=>$type)), 'linkOptions' => array()),
             array('label' => 'Print', 'icon' => 'icon-print', 'url' => 'javascript:void(0);return false', 'linkOptions' => array('onclick' => 'printDiv();return false;')),
     )));

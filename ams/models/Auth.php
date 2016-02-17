@@ -108,16 +108,15 @@ class Auth extends CActiveRecord {
 
         return array(
             array('label' => 'Dashboard', 'url' => array('/dashboard')),
-            array('visible' => landa()->checkAccess('User', 'r'), 'auth_id' => 'User', 'label' => 'User', 'url' => array('/user'), 'crud' => array("r" => 1)),
             array('visible' => landa()->checkAccess('Download', 'r'), 'auth_id' => 'Download', 'label' => 'Dokumen', 'url' => array('/downloadCategory')),
             array('visible' => landa()->checkAccess('Student', 'r') || landa()->checkAccess('SchoolYear', 'r') || landa()->checkAccess('Classroom', 'r') || landa()->checkAccess('UserClassroom', 'r'), 'label' => 'Akademik', 'url' => array('/User'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
+                    array('visible' => landa()->checkAccess('User', 'r'), 'auth_id' => 'User', 'label' => 'Guru', 'url' => array('/user'), 'crud' => array("r" => 1)),
                     array('visible' => landa()->checkAccess('Student', 'r'), 'auth_id' => 'Student', 'label' => 'Murid', 'url' => url('user/student'), 'crud' => array("r" => 1)),
                     array('visible' => landa()->checkAccess('SchoolYear', 'r'), 'auth_id' => 'SchoolYear', 'label' => 'Tahun Ajaran', 'url' => array('/schoolYear'), 'crud' => array("r" => 1)),
                     array('visible' => landa()->checkAccess('Classroom', 'r'), 'auth_id' => 'Classroom', 'label' => 'Kelas', 'url' => array('/classroom'), 'crud' => array("r" => 1)),
                     array('visible' => landa()->checkAccess('UserClassroom', 'r'), 'auth_id' => 'UserClassroom', 'label' => 'Penempatan Siswa', 'url' => array('/userClassroom'), 'crud' => array("r" => 1)),
                 )),
             array('visible' => landa()->checkAccess('ExamCategory', 'r') || landa()->checkAccess('Exam', 'r') || landa()->checkAccess('Test', 'r') || landa()->checkAccess('TestResult', 'r'), 'label' => 'Ujian', 'url' => array('/User'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
-                    array('visible' => landa()->checkAccess('ExamCategory', 'r'), 'auth_id' => 'ExamCategory', 'label' => 'Kategori', 'url' => array('/examCategory'), 'crud' => array("r" => 1)),
                     array('visible' => landa()->checkAccess('Exam', 'r'), 'auth_id' => 'Exam', 'label' => 'Soal', 'url' => array('/exam'), 'crud' => array("r" => 1)),
                     array('visible' => landa()->checkAccess('Test', 'r'), 'auth_id' => 'Test', 'label' => 'Jadwal', 'url' => array('/test'), 'crud' => array("r" => 1)),
                     array('visible' => landa()->checkAccess('TestResult', 'r'), 'auth_id' => 'TestResult', 'label' => 'Hasil Ujian', 'url' => array('/testResult'), 'crud' => array("r" => 1)),

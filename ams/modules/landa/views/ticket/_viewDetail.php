@@ -13,7 +13,7 @@ endforeach;
 
 <div class="msgDetLoad"></div>
 <?php
-$this->widget('common.extensions.yiinfinite-scroll.YiinfiniteScroller', array(
+$this->widget('application.extensions.yiinfinite-scroll.YiinfiniteScroller', array(
     'contentSelector' => '.msgDetLoad',
     'itemSelector' => 'li.msgDet',
     'donetext' => '-- this is the end of data --',

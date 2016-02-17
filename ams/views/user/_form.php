@@ -23,8 +23,8 @@
             <div class="title">
                 <h4>
                     <?php
-                    $listakses = ($_GET['type']=='student') ? array(2 => 'Murid') : array(1 => 'Guru', 2 => 'Murid');                   
-                    
+                    $listakses = ($_GET['type'] == 'student') ? array(2 => 'Murid') : array(1 => 'Guru');
+
                     echo 'Hak Akses Sebagai<span class="required">*</span> :    ';
                     if ($model->id == User()->id) { //if same id, cannot change role it self
                         $listRoles = Roles::model()->listRoles();
@@ -94,7 +94,7 @@
                             <?php echo $form->toggleButtonRow($model, 'enabled'); ?> 
                             <?php echo $form->textFieldRow($model, 'code', array('class' => 'span5', 'maxlength' => 25)); ?>
                             <?php echo $form->textFieldRow($model, 'name', array('class' => 'span5', 'maxlength' => 255)); ?> 
-                            
+
                         </td>
 
                     </tr>
@@ -132,46 +132,35 @@
                 );
                 ?>
             </div>  
-            <?php if (user()->roles_id == 2) { ?>
-                <div class="tab-pane" id="parent">
-                    <?php
-                    if ($model->isNewRecord == false) {
-                        $other = json_decode($model->others, true);
-                        echo'<div class="control-group">
-                    <label class="control-label" for="inputEmail">Parents Name</label>
+
+            <div class="tab-pane" id="parent">
+                <?php
+                if ($model->isNewRecord == false) {
+                    $other = json_decode($model->others, true);
+                    $ortu_nama = $other['parent_name'];
+                    $ortu_telp = $other['parent_number'];
+                } else {
+                    $ortu_nama = '';
+                    $ortu_telp = '';
+                }
+                ?>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Nama Orang Tua</label>
                     <div class="controls">
-                        <input style="height:px;" type="text" id="User[parent_name]" name="User[parent_name]" placeholder="Parent Name" value="' . $other['parent_name'] . '">
+                        <input style="height:px;" type="text" id="User[parent_name]" name="User[parent_name]" value="<?=$ortu_nama?>">
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="inputEmail">Parents Number</label>
+                    <label class="control-label" for="inputEmail">Telepon Orang Tua</label>
                     <div class="controls">
                         <div class="input-prepend">
                             <span class="add-on">+62</span>
-                            <input class="span2" id="prependedInput" type="text" placeholder="Parent Number" name="User[parent_number]" value="' . $other['parent_number'] . '">
+                            <input class="span2" id="prependedInput" type="text" name="User[parent_number]" value="<?=$ortu_telp?>">
                         </div>
                     </div>
-                </div>';
-                    } else {
-                        ?>
-                        <div class="control-group">
-                            <label class="control-label" for="inputEmail">Parents Name</label>
-                            <div class="controls">
-                                <input style="height:px;" type="text" id="User[parent_name]" name="User[parent_name]" placeholder="Parent Name">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="inputEmail">Parents Number</label>
-                            <div class="controls">
-                                <div class="input-prepend">
-                                    <span class="add-on">+62</span>
-                                    <input class="span2" id="prependedInput" type="text" placeholder="Parent Number" name="User[parent_number]">
-                                </div>
-                            </div>
-                        </div>
-                    <?php } ?>
                 </div>
-            <?php } ?>
+            </div>
+
 
             <?php if (!($model->isNewRecord)) { ?>
                 <div class="tab-pane" id="document">
@@ -281,13 +270,6 @@
         'type' => 'primary',
         'icon' => 'ok white',
         'label' => $model->isNewRecord ? 'Tambah' : 'Simpan',
-    ));
-    ?>
-    <?php
-    $this->widget('bootstrap.widgets.TbButton', array(
-        'buttonType' => 'reset',
-        'icon' => 'remove',
-        'label' => 'Reset',
     ));
     ?>
 </div>

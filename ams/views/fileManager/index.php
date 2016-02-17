@@ -5,7 +5,7 @@
 $filesPath = realpath(param('pathImg'));
 $filesUrl = param('urlImg');
  
-$this->widget("common.extensions.ezzeelfinder.ElFinderWidget", array(
+$this->widget("application.extensions.ezzeelfinder.ElFinderWidget", array(
     'selector' => "div#file-uploader",
     'clientOptions' => array(
 //        'lang' => "id",

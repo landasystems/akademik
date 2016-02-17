@@ -1,7 +1,5 @@
 <?php
 
-
-
 /**
  * This is the model class for table "{{m_user}}".
  *
@@ -32,11 +30,10 @@ class User extends CActiveRecord {
      * @param string $className active record class name.
      * @return User the static model class
      */
-    
 //    public function getDbConnection() {
 //        return Yii::app()->db2;
 //    }
-    
+
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -62,10 +59,10 @@ class User extends CActiveRecord {
             array('name, password, name,description, address', 'length', 'max' => 255),
             array('code', 'length', 'max' => 25),
             array('modified, enabled', 'safe'),
-            array('username, email', 'unique', 'message' => '{attribute} : {value} already exists!', 'on' => 'allow'),
-            array('email', 'email', 'on' => 'allow'),
-            array('username, email', 'required', 'on' => 'allow'),
-            array('username, email', 'safe', 'message' => '{attribute} : {value} already exists!', 'on' => 'notAllow'),
+            array('username, email', 'unique', 'message' => '{attribute} : {value} already exists!'),
+            array('email', 'email'),
+            array('username, email', 'required'),
+            array('username, email', 'safe', 'message' => '{attribute} : {value} already exists!'),
             array('id, username, email,saldo, password, code, name, city_id, address, phone, created, created_user_id, modified,description,others', 'safe', 'on' => 'search'),
             array('avatar_img', 'unsafe'),
         );
@@ -101,42 +98,13 @@ class User extends CActiveRecord {
         $criteria->compare('t.name', $this->name, true);
         $criteria->compare('city_id', $this->city_id);
         $criteria->compare('phone', $this->phone, true);
-//        $criteria->compare('roles_id', $this->roles_id, true);
-        if ($type == 'customer') {
-//            $criteria->alias = "u";
-            $siteConfig = SiteConfig::model()->listSiteConfig();
-            $sCriteria = json_decode($siteConfig->roles_customer, true);
-            $criteria->addInCondition('roles_id', $sCriteria);
-        } elseif ($type == 'contact') {
-//            $criteria->alias = "u";
-            $siteConfig = SiteConfig::model()->listSiteConfig();
-            $sCriteria = json_decode($siteConfig->roles_contact, true);
-            $criteria->compare('roles_id', $sCriteria);
-            if (!empty($roles))
-                $criteria->compare('roles_id', $roles);
-        } elseif ($type == 'user') {
-            
-//        } elseif ($type == 'supplier') {
-////            $criteria->alias = "u";
-//            $siteConfig = SiteConfig::model()->listSiteConfig();
-//            $sCriteria = json_decode($siteConfig->roles_supplier, true);
-//            $criteria->addInCondition('roles_id', $sCriteria);
-//        } elseif ($type == 'employment') {
-////            $criteria->alias = "u";
-//            $siteConfig = SiteConfig::model()->listSiteConfig();
-//            $sCriteria = json_decode($siteConfig->roles_employment, true);
-//            $criteria->addInCondition('roles_id', $sCriteria);
-        } elseif ($type == 'student') {
-//            $criteria->alias = "u";
-            $siteConfig = SiteConfig::model()->listSiteConfig();
-            $sCriteria = json_decode($siteConfig->roles_student, true);
-            $criteria->addInCondition('roles_id', $sCriteria);
-        } elseif ($type == 'teacher') {
-//            $criteria->alias = "u";
-            $siteConfig = SiteConfig::model()->listSiteConfig();
-            $sCriteria = json_decode($siteConfig->roles_teacher, true);
-            $criteria->addInCondition('roles_id', $sCriteria);
+
+        if ($type == 'student') {
+            $criteria->compare('roles_id', 2);
+        } else {
+            $criteria->compare('roles_id', 1);
         }
+
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
             'sort' => array('defaultOrder' => 't.id Desc',)
@@ -146,17 +114,17 @@ class User extends CActiveRecord {
     public function listUser() {
 //        if (!app()->session['listUser']) {
 //            $result = array();
-            $users = $this->findAll(array('index' => 'id'));
+        $users = $this->findAll(array('index' => 'id'));
 //            app()->session['listUser'] = $users;
 //        }
-          return $users;
+        return $users;
 //        return app()->session['listUser'];
     }
 
     public function listUserPhone() {
 //        if (!app()->session['listUserPhone']) {
 //            $result = array();
-            $users = $this->findAll(array('index' => 'phone'));
+        $users = $this->findAll(array('index' => 'phone'));
 //            app()->session['listUserPhone'] = $users;
 //        }
 
@@ -306,7 +274,7 @@ class User extends CActiveRecord {
         return sha1($password);
     }
 
-     public function getUrlFull() {
+    public function getUrlFull() {
         return param('urlImg') . $this->DownloadCategory->path . $this->url;
     }
 
@@ -324,12 +292,12 @@ class User extends CActiveRecord {
     }
 
     public function getTagImg() {
-        return '<img src="' . $this->imgUrl['small'] . '" class="img-polaroid"/><br>';
+        return '<img src="' . $this->imgUrl['small'] . '" class="img-polaroid" width="50"/><br>';
     }
 
     public function getTagBiodata() {
-        return '<div class="row-fluid">
-                    <div class="span3">
+        return '<div class="row-fluid" style="min-height: 0;">
+                    <div class="span3" style="text-align:left">
                         <b>Nama</b>
                     </div>
                     <div class="span1">:</div>
@@ -337,8 +305,8 @@ class User extends CActiveRecord {
                         ' . $this->name . '
                     </div>
                 </div>
-                <div class="row-fluid">
-                    <div class="span3">
+                <div class="row-fluid" style="min-height: 0;">
+                    <div class="span3" style="text-align:left">
                         <b>Provinsi</b>
                     </div>
                     <div class="span1">:</div>
@@ -346,8 +314,8 @@ class User extends CActiveRecord {
                         ' . $this->City->Province->name . '
                     </div>
                 </div>
-                <div class="row-fluid">
-                    <div class="span3">
+                <div class="row-fluid" style="min-height: 0;">
+                    <div class="span3" style="text-align:left">
                         <b>Kota/Kab</b>
                     </div>
                     <div class="span1">:</div>
@@ -355,8 +323,8 @@ class User extends CActiveRecord {
                         ' . $this->City->name . '
                     </div>
                 </div>
-                     <div class="row-fluid">
-                    <div class="span3">
+                <div class="row-fluid" style="min-height: 0;">
+                    <div class="span3" style="text-align:left">
                         <b>Telepon</b>
                     </div>
                     <div class="span1">:</div>
@@ -371,8 +339,8 @@ class User extends CActiveRecord {
         $enabled = ($this->enabled == 0) ? "<span class=\"label label-important\">No</span>" :
                 "<span class=\"label label-info\">Yes</span>";
         $roles = (isset($this->Roles->name)) ? $this->Roles->name : '';
-        return '<div class="row-fluid">
-                    <div class="span3">
+        return '<div class="row-fluid" style="min-height: 0;">
+                    <div class="span3" style="text-align:left">
                         <b>Username</b>
                     </div>
                     <div class="span1">:</div>
@@ -380,17 +348,8 @@ class User extends CActiveRecord {
                         ' . $this->username . '
                     </div>
                 </div>
-                <div class="row-fluid">
-                    <div class="span3">
-                        <b>Permission</b>
-                    </div>
-                    <div class="span1">:</div>
-                    <div class="span8" style="text-align:left">
-                        ' . $roles . '
-                    </div>
-                </div>
-                <div class="row-fluid">
-                    <div class="span3">
+                <div class="row-fluid" style="min-height: 0;">
+                    <div class="span3" style="text-align:left">
                         <b>E-mail</b>
                     </div>
                     <div class="span1">:</div>
@@ -398,8 +357,8 @@ class User extends CActiveRecord {
                         ' . $this->email . '
                     </div>
                 </div>
-                <div class="row-fluid">
-                    <div class="span3">
+                <div class="row-fluid" style="min-height: 0;">
+                    <div class="span3" style="text-align:left"  >
                         <b>Enabled</b>
                     </div>
                     <div class="span1">:</div>
@@ -408,10 +367,11 @@ class User extends CActiveRecord {
                     </div>
                 </div>';
     }
-    
+
     function getFullContact() {
         return $this->name . ' (0' . $this->phone . ')';
     }
+
 //    public function getEnable(){
 //        return '$this->enabled == 1 ? 'badge badge-success' : (($model->result >= 80) ? 'badge badge-warning' : 'badge badge-important');
 //$result = '<span class="' . $resultColor . '"><h1>' . $model->result . '</h1></span>';';

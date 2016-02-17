@@ -10,33 +10,6 @@ class TestResultController extends Controller {
      */
     public $layout = 'main';
 
-    public function filters() {
-        return array(
-            'accessControl', // perform access control for CRUD operations
-        );
-    }
-
-    public function accessRules() {
-        return array(
-            array('allow', // c
-                'actions' => array('create'),
-                'expression' => 'app()->controller->isValidAccess("TestResult","c")'
-            ),
-            array('allow', // r
-                'actions' => array('index', 'view'),
-                'expression' => 'app()->controller->isValidAccess("TestResult","r")'
-            ),
-            array('allow', // u
-                'actions' => array('update'),
-                'expression' => 'app()->controller->isValidAccess("TestResult","u")'
-            ),
-            array('allow', // d
-                'actions' => array('delete'),
-                'expression' => 'app()->controller->isValidAccess("TestResult","d")'
-            )
-        );
-    }
-
     public function loadModel($id) {
         $model = TestResult::model()->findByPk($id);
         if ($model === null)

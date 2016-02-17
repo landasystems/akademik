@@ -10,41 +10,7 @@ class UserController extends Controller {
      */
     public $layout = 'main';
 
-    public function filters() {
-        return array(
-            'accessControl', // perform access control for CRUD operations
-        );
-    }
-
-    public function accessRules() {
-        return array(
-            array('allow', // c
-                'actions' => array('create'),
-                'expression' => 'app()->controller->isValidAccess("User","c")',
-                'expression' => 'app()->controller->isValidAccess("Teacher","c")',
-                'expression' => 'app()->controller->isValidAccess("Student","c")'
-            ),
-            array('allow', // r
-                'actions' => array('index', 'view'),
-                'expression' => 'app()->controller->isValidAccess("User","r")',
-                'expression' => 'app()->controller->isValidAccess("Teacher","r")',
-                'expression' => 'app()->controller->isValidAccess("Student","r")'
-            ),
-            array('allow', // u
-                'actions' => array('update'),
-                'expression' => 'app()->controller->isValidAccess("User","u")',
-                'expression' => 'app()->controller->isValidAccess("Teacher","u")',
-                'expression' => 'app()->controller->isValidAccess("Student","u")'
-            ),
-            array('allow', // d
-                'actions' => array('delete'),
-                'expression' => 'app()->controller->isValidAccess("User","d")',
-                'expression' => 'app()->controller->isValidAccess("Teacher","d")',
-                'expression' => 'app()->controller->isValidAccess("Student","d")'
-            )
-        );
-    }
-
+   
     /**
      * Displays a particular model.
      * @param integer $id the ID of the model to be displayed
@@ -63,22 +29,7 @@ class UserController extends Controller {
         ));
     }
 
-    /**
-     * Creates a new model.
-     * If creation is successful, the browser will be redirected to the 'view' page.
-     */
-    public function actionAllowLogin() {
-        logs($_POST);
-        if (!empty($_POST['User']['roles_id'])) {
-            $listRoles = Roles::model()->listRoles();
-            if (isset($listRoles[$_POST['User']['roles_id']]))
-                echo $listRoles[$_POST['User']['roles_id']]['is_allow_login'];
-            elseif ($_POST['User']['roles_id'] == -1)
-                echo '-1';
-            else
-                echo '0';
-        }
-    }
+   
 
     public function actionRemovephoto($id) {
         User::model()->updateByPk($id, array('avatar_img' => NULL));
@@ -87,7 +38,7 @@ class UserController extends Controller {
     public function actionCreate() {
         $model = new User;
         $listRoles = Roles::model()->listRoles();
-        $model->scenario = 'allow';
+        
         $type = 'user';
 
 
@@ -98,22 +49,12 @@ class UserController extends Controller {
                                         $(this).tab("show");
                                     })');
         $type = 'user';
-        $model->scenario = 'allow';
         if (!empty($_GET['type']))
             $type = $_GET['type'];
-        if ($type != 'user')
-            $model->scenario = 'notAllow';
 
         if (isset($_POST['User'])) {
 
 
-            if (!empty($_POST['User']['roles_id'])) {
-                $model->scenario = 'allow';
-                if (isset($listRoles[$_POST['User']['roles_id']])) {
-                    if ($listRoles[$_POST['User']['roles_id']]['is_allow_login'] == '0')
-                        $model->scenario = 'notAllow';
-                }
-            }
             $model->attributes = $_POST['User'];
             $model->password = sha1($model->password);
             $others = json_decode($model->others, true);
@@ -177,9 +118,6 @@ class UserController extends Controller {
         else
             $type = 'user';
 
-//        if ($type != 'user')
-//            $model->scenario == 'notAllow';
-
         $tempRoles = $model->roles_id;
         $tempPass = $model->password;
         // Uncomment the following line if AJAX validation is needed
@@ -189,22 +127,7 @@ class UserController extends Controller {
                                         $(this).tab("show");
                                     })');
 
-        if (isset($listRoles[$model->roles_id])) {
-            if ($listRoles[$model->roles_id]['is_allow_login'] == 0)
-                $model->scenario = 'notAllow';
-            else
-                $model->scenario = 'allow';
-        }
-
-
         if (isset($_POST['User'])) {
-//            if (!empty($_POST['User']['roles'])) {
-//                $model->scenario = 'allow';
-//                if (isset($listRoles[$_POST['User']['roles']])) {
-//                    if ($listRoles[$_POST['User']['roles']]['is_allow_login'] == '0')
-//                        $model->scenario = 'notAllow';
-//                }
-//            }
 
             $model->attributes = $_POST['User'];
 
@@ -248,8 +171,6 @@ class UserController extends Controller {
             }
         }
         unset($model->password);
-//        if ($type != 'user')
-//            $model->scenario == 'allow';
 
         $this->render('update', array(
             'model' => $model,
@@ -271,21 +192,10 @@ class UserController extends Controller {
                                         e.preventDefault();
                                         $(this).tab("show");
                                     })');
-        if (isset($listRoles[$model->roles_id])) {
-            if ($listRoles[$model->roles_id]['is_allow_login'] == '0')
-                $model->scenario = 'notAllow';
-            else
-                $model->scenario = 'allow';
-        }
+        
 
         if (isset($_POST['User'])) {
-            if (!empty($_POST['User']['roles_id'])) {
-                $model->scenario = 'allow';
-                if (isset($listRoles[$_POST['User']['roles_id']])) {
-                    if ($listRoles[$_POST['User']['roles_id']]['is_allow_login'] == '0')
-                        $model->scenario = 'notAllow';
-                }
-            }
+            
             $model->attributes = $_POST['User'];
 
             if (!empty($model->password)) { //not empty, change the password
@@ -449,7 +359,6 @@ class UserController extends Controller {
         }
         $session['User_records'] = User::model()->findAll($criteria);
 
-        $model->scenario == 'notAllow';
         $this->render('index', array(
             'model' => $model,
             'type' => 'teacher',
@@ -503,7 +412,6 @@ class UserController extends Controller {
         }
         $session['User_records'] = User::model()->findAll($criteria);
 
-        $model->scenario == 'notAllow';
         $this->render('index', array(
             'model' => $model,
             'type' => 'student',
@@ -548,56 +456,7 @@ class UserController extends Controller {
         }
     }
 
-    public function actionGenerateExcel() {
-        $model = User::model()->findAll(array());
-        Yii::app()->request->sendFile('List user.xls', $this->renderPartial('excelReport', array(
-                    'model' => $model
-                        ), true)
-        );
-    }
-
-    public function actionGeneratePdf() {
-
-        $session = new CHttpSession;
-        $session->open();
-        Yii::import('application.modules.admin.extensions.giiplus.bootstrap.*');
-        require_once(Yii::getPathOfAlias('common') . '/extensions/tcpdf/tcpdf.php');
-        require_once(Yii::getPathOfAlias('common') . '/extensions/tcpdf/config/lang/eng.php');
-
-        if (isset($session['User_records'])) {
-            $model = $session['User_records'];
-        } else
-            $model = User::model()->findAll();
-
-
-
-        $html = $this->renderPartial('expenseGridtoReport', array(
-            'model' => $model
-                ), true);
-
-        //die($html);
-
-        $pdf = new TCPDF();
-        $pdf->SetCreator(PDF_CREATOR);
-        $pdf->SetAuthor(Yii::app()->name);
-        $pdf->SetTitle('Laporan User');
-        $pdf->SetSubject('Laporan User Report');
-        //$pdf->SetKeywords('example, text, report');
-        $pdf->SetHeaderData('', 0, "Report", '');
-        //$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, "Laporan" User, "");
-        $pdf->SetHeaderData("", "", "Laporan User", "");
-        $pdf->setHeaderFont(Array('helvetica', '', 8));
-        $pdf->setFooterFont(Array('helvetica', '', 6));
-        $pdf->SetMargins(15, 18, 15);
-        $pdf->SetHeaderMargin(5);
-        $pdf->SetFooterMargin(10);
-        $pdf->SetAutoPageBreak(TRUE, 0);
-        $pdf->SetFont('dejavusans', '', 7);
-        $pdf->AddPage();
-        $pdf->writeHTML($html, true, false, true, false, '');
-        $pdf->LastPage();
-        $pdf->Output("User_002.pdf", "I");
-    }
+   
 
     public function actionSearchJson() {
         $user = User::model()->findAll(array('condition' => 'name like "%' . $_POST['queryString'] . '%" OR phone like "%' . $_POST['queryString'] . '%"', 'limit' => 7));

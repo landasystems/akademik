@@ -93,7 +93,7 @@ foreach ($model as $arr) {
 if (empty($model)) {
     echo '<div class="alert fade in">
             <button type="button" class="close" data-dismiss="alert">×</button>
-            <strong>No Exam for you!</strong> We cannot trace any condition to examination in your class.
+            <strong>Tidak Ada Jadwal Ujian!</strong> dalam database sistem, tidak terdapat ujian untuk Anda, jika terjadi kesalahan segera hubungi Administrator untuk dilakukan pengecekan data Kelas & Jadwal Ujian.
           </div>';
 }
 ?>

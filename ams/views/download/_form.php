@@ -77,7 +77,7 @@
             <label class="control-label">Document</label>
             <div class="controls">';
 
-            $this->widget('common.extensions.EAjaxUpload.EAjaxUpload', array(
+            $this->widget('application.extensions.EAjaxUpload.EAjaxUpload', array(
                 'id' => 'url',
                 'config' => array(
                     'action' => Yii::app()->createUrl('download/upload/' . $model->download_category_id),

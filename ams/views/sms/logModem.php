@@ -1,6 +1,6 @@
     <?php
 
-    $this->beginWidget('common.extensions.prettify.JPrettify');
+    $this->beginWidget('application.extensions.prettify.JPrettify');
     echo $log;
     $this->endWidget();
     ?>

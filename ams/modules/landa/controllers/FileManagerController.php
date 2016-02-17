@@ -27,7 +27,7 @@ class FileManagerController extends Controller {
 
     public function actions() {
         return array(
-            'fileUploaderConnector' => "common.extensions.ezzeelfinder.ElFinderConnectorAction",
+            'fileUploaderConnector' => "application.extensions.ezzeelfinder.ElFinderConnectorAction",
         );
     }
 

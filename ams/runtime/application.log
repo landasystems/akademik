@@ -742,3 +742,2095 @@ Stack trace:
 REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/fonts/CopernicusWeb_BookItalic.woff
 HTTP_REFERER=http://localhost/akademik/ams/www/akademik.smpplusalkautsar/style.css
 ---
+2016/02/17 16:27:37 [error] [exception.CException] exception 'CException' with message 'Alias "common.extensions.NestedSetBehavior.NestedSetBehavior" is invalid. Make sure it points to an existing directory or file.' in /var/www/akademik/ams/lib/yii/YiiBase.php:347
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/YiiBase.php(196): YiiBase::import('common.extensio...', true)
+#1 /var/www/akademik/ams/lib/yii/base/CComponent.php(329): YiiBase::createComponent(Array)
+#2 /var/www/akademik/ams/lib/yii/base/CComponent.php(298): CComponent->attachBehavior('nestedSetBehavi...', Array)
+#3 /var/www/akademik/ams/lib/yii/db/ar/CActiveRecord.php(396): CComponent->attachBehaviors(Array)
+#4 /var/www/akademik/ams/lib/yii/db/ar/CActiveRecord.php(611): CActiveRecord::model('DownloadCategor...')
+#5 /var/www/akademik/ams/lib/yii/web/CSort.php(330): CActiveRecord->getAttributeLabel('DownloadCategor...')
+#6 /var/www/akademik/ams/extensions/bootstrap/widgets/TbDataColumn.php(34): CSort->resolveLabel('DownloadCategor...')
+#7 /var/www/akademik/ams/lib/yii/zii/widgets/grid/CGridColumn.php(127): TbDataColumn->renderHeaderCellContent()
+#8 /var/www/akademik/ams/lib/yii/zii/widgets/grid/CGridView.php(506): CGridColumn->renderHeaderCell()
+#9 /var/www/akademik/ams/lib/yii/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#10 /var/www/akademik/ams/lib/yii/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 /var/www/akademik/ams/lib/yii/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{pager}{items}{...')
+#13 /var/www/akademik/ams/lib/yii/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#14 /var/www/akademik/ams/lib/yii/web/CBaseController.php(173): CBaseListView->run()
+#15 /var/www/akademik/ams/views/site/index.php(48): CBaseController->widget('bootstrap.widge...', Array)
+#16 /var/www/akademik/ams/lib/yii/web/CBaseController.php(126): require('/var/www/akadem...')
+#17 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/akadem...', NULL, true)
+#18 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(SiteController), '/var/www/akadem...', NULL, true)
+#19 /var/www/akademik/ams/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/akadem...', NULL, true)
+#20 /var/www/akademik/ams/lib/yii/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#21 /var/www/akademik/ams/controllers/SiteController.php(34): CController->render('index')
+#22 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#23 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#24 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#25 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#26 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#27 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#28 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#30 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('')
+#32 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('')
+#33 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#34 /var/www/akademik/index.php(17): CApplication->run()
+#35 {main}
+REQUEST_URI=/akademik/index.php
+HTTP_REFERER=http://localhost/akademik/site/login.html
+---
+2016/02/17 16:33:57 [error] [exception.CException] exception 'CException' with message 'Alias "common.extensions.NestedSetBehavior.NestedSetBehavior" is invalid. Make sure it points to an existing directory or file.' in /var/www/akademik/ams/lib/yii/YiiBase.php:347
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/YiiBase.php(196): YiiBase::import('common.extensio...', true)
+#1 /var/www/akademik/ams/lib/yii/base/CComponent.php(329): YiiBase::createComponent(Array)
+#2 /var/www/akademik/ams/lib/yii/base/CComponent.php(298): CComponent->attachBehavior('nestedSetBehavi...', Array)
+#3 /var/www/akademik/ams/lib/yii/db/ar/CActiveRecord.php(396): CComponent->attachBehaviors(Array)
+#4 /var/www/akademik/ams/lib/yii/db/ar/CActiveRecord.php(611): CActiveRecord::model('DownloadCategor...')
+#5 /var/www/akademik/ams/lib/yii/web/CSort.php(330): CActiveRecord->getAttributeLabel('DownloadCategor...')
+#6 /var/www/akademik/ams/extensions/bootstrap/widgets/TbDataColumn.php(34): CSort->resolveLabel('DownloadCategor...')
+#7 /var/www/akademik/ams/lib/yii/zii/widgets/grid/CGridColumn.php(127): TbDataColumn->renderHeaderCellContent()
+#8 /var/www/akademik/ams/lib/yii/zii/widgets/grid/CGridView.php(506): CGridColumn->renderHeaderCell()
+#9 /var/www/akademik/ams/lib/yii/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#10 /var/www/akademik/ams/lib/yii/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 /var/www/akademik/ams/lib/yii/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{pager}{items}{...')
+#13 /var/www/akademik/ams/lib/yii/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#14 /var/www/akademik/ams/lib/yii/web/CBaseController.php(173): CBaseListView->run()
+#15 /var/www/akademik/ams/views/site/index.php(48): CBaseController->widget('bootstrap.widge...', Array)
+#16 /var/www/akademik/ams/lib/yii/web/CBaseController.php(126): require('/var/www/akadem...')
+#17 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/akadem...', NULL, true)
+#18 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(SiteController), '/var/www/akadem...', NULL, true)
+#19 /var/www/akademik/ams/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/akadem...', NULL, true)
+#20 /var/www/akademik/ams/lib/yii/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#21 /var/www/akademik/ams/controllers/SiteController.php(34): CController->render('index')
+#22 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#23 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#24 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#25 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#26 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#27 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#28 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#30 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('')
+#32 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('')
+#33 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#34 /var/www/akademik/index.php(17): CApplication->run()
+#35 {main}
+REQUEST_URI=/akademik/index.php
+HTTP_REFERER=http://localhost/akademik/site/login.html
+---
+2016/02/17 16:34:07 [error] [exception.CException] exception 'CException' with message 'Alias "common.extensions.NestedSetBehavior.NestedSetBehavior" is invalid. Make sure it points to an existing directory or file.' in /var/www/akademik/ams/lib/yii/YiiBase.php:347
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/YiiBase.php(196): YiiBase::import('common.extensio...', true)
+#1 /var/www/akademik/ams/lib/yii/base/CComponent.php(329): YiiBase::createComponent(Array)
+#2 /var/www/akademik/ams/lib/yii/base/CComponent.php(298): CComponent->attachBehavior('nestedSetBehavi...', Array)
+#3 /var/www/akademik/ams/lib/yii/db/ar/CActiveRecord.php(396): CComponent->attachBehaviors(Array)
+#4 /var/www/akademik/ams/lib/yii/db/ar/CActiveRecord.php(611): CActiveRecord::model('DownloadCategor...')
+#5 /var/www/akademik/ams/lib/yii/web/CSort.php(330): CActiveRecord->getAttributeLabel('DownloadCategor...')
+#6 /var/www/akademik/ams/extensions/bootstrap/widgets/TbDataColumn.php(34): CSort->resolveLabel('DownloadCategor...')
+#7 /var/www/akademik/ams/lib/yii/zii/widgets/grid/CGridColumn.php(127): TbDataColumn->renderHeaderCellContent()
+#8 /var/www/akademik/ams/lib/yii/zii/widgets/grid/CGridView.php(506): CGridColumn->renderHeaderCell()
+#9 /var/www/akademik/ams/lib/yii/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#10 /var/www/akademik/ams/lib/yii/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 /var/www/akademik/ams/lib/yii/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{pager}{items}{...')
+#13 /var/www/akademik/ams/lib/yii/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#14 /var/www/akademik/ams/lib/yii/web/CBaseController.php(173): CBaseListView->run()
+#15 /var/www/akademik/ams/views/site/index.php(48): CBaseController->widget('bootstrap.widge...', Array)
+#16 /var/www/akademik/ams/lib/yii/web/CBaseController.php(126): require('/var/www/akadem...')
+#17 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/akadem...', NULL, true)
+#18 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(SiteController), '/var/www/akadem...', NULL, true)
+#19 /var/www/akademik/ams/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/akadem...', NULL, true)
+#20 /var/www/akademik/ams/lib/yii/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#21 /var/www/akademik/ams/controllers/SiteController.php(34): CController->render('index')
+#22 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#23 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#24 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#25 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#26 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#27 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#28 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#30 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('')
+#32 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('')
+#33 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#34 /var/www/akademik/index.php(17): CApplication->run()
+#35 {main}
+REQUEST_URI=/akademik/index.php
+HTTP_REFERER=http://localhost/akademik/site/login.html
+---
+2016/02/17 16:35:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:35:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/351-150x150-dinda-wulan-kartika.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/351-150x150-dinda-wulan-kartika.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:42:04 [error] [php] reset() expects parameter 1 to be array, integer given (/var/www/akademik/ams/lib/yii/db/schema/CDbCriteria.php:280)
+Stack trace:
+#0 /var/www/akademik/ams/views/user/index.php(96): User->search()
+#1 /var/www/akademik/ams/lib/yii/web/CBaseController.php(126): require()
+#2 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): UserController->renderInternal()
+#3 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile()
+#4 /var/www/akademik/ams/lib/yii/web/CController.php(869): UserController->renderFile()
+#5 /var/www/akademik/ams/lib/yii/web/CController.php(782): UserController->renderPartial()
+#6 /var/www/akademik/ams/controllers/UserController.php(403): UserController->render()
+#7 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#8 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): UserController->runAction()
+#10 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#13 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#15 /var/www/akademik/ams/lib/yii/web/CController.php(265): UserController->runActionWithFilters()
+#16 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): UserController->run()
+#17 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/user.html
+2016/02/17 16:42:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:42:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:42:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:42:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/89-150x150-bahrudin.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/8...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/89-150x150-bahrudin.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/84-150x150-lilik-nurhayati,-s.pd-i.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/8...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/84-150x150-lilik-nurhayati,-s.pd-i.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/76-150x150-miftahul-farid.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/7...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/76-150x150-miftahul-farid.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/77-150x150-agus-setyawan.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/7...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/77-150x150-agus-setyawan.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/82-150x150-muawanah.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/8...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/82-150x150-muawanah.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/88-150x150-sukron-jamil,-s.pd.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/8...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/88-150x150-sukron-jamil,-s.pd.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/80-150x150-i-made-argita.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/8...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/80-150x150-i-made-argita.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/82-150x150-muawanah.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/8...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/82-150x150-muawanah.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/80-150x150-i-made-argita.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/8...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/80-150x150-i-made-argita.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/84-150x150-lilik-nurhayati,-s.pd-i.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/8...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/84-150x150-lilik-nurhayati,-s.pd-i.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/77-150x150-agus-setyawan.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/7...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/77-150x150-agus-setyawan.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/89-150x150-bahrudin.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/8...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/89-150x150-bahrudin.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/76-150x150-miftahul-farid.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/7...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/76-150x150-miftahul-farid.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:51:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/88-150x150-sukron-jamil,-s.pd.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/8...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/88-150x150-sukron-jamil,-s.pd.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:52:26 [error] [php] Undefined index: parent_name (/var/www/akademik/ams/controllers/UserController.php:123)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): UserController->runAction()
+#1 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#4 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(265): UserController->runActionWithFilters()
+#7 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): UserController->run()
+#8 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/user/create.html?type=user
+2016/02/17 16:56:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /var/www/akademik/ams/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CController.php(270): CController->missingAction('user')
+#1 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('user')
+#2 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('user/user')
+#3 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/akademik/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/akademik/user/user.html
+HTTP_REFERER=http://localhost/akademik/user/create.html?type=user
+---
+2016/02/17 16:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:56:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 16:56:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 16:56:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 16:56:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 16:56:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:56:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:56:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:56:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 16:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 16:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 16:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 16:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 16:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 16:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 16:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 16:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:20:31 [error] [php] Undefined index: parent_name (/var/www/akademik/ams/controllers/UserController.php:123)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): UserController->runAction()
+#1 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#4 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(265): UserController->runActionWithFilters()
+#7 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): UserController->run()
+#8 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/user/create.html?type=user
+2016/02/17 17:20:59 [warning] [application] Failed to set unsafe attribute "avatar_img" of "User".
+in /var/www/akademik/ams/controllers/UserController.php (117)
+in /var/www/akademik/index.php (17)
+2016/02/17 17:20:59 [error] [php] Undefined index: parent_name (/var/www/akademik/ams/controllers/UserController.php:123)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): UserController->runAction()
+#1 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#4 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(265): UserController->runActionWithFilters()
+#7 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): UserController->run()
+#8 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/user/create.html?type=user
+in /var/www/akademik/ams/controllers/UserController.php (123)
+in /var/www/akademik/index.php (17)
+2016/02/17 17:24:24 [warning] [application] Failed to set unsafe attribute "avatar_img" of "User".
+in /var/www/akademik/ams/controllers/UserController.php (92)
+in /var/www/akademik/index.php (17)
+2016/02/17 17:24:24 [error] [php] Undefined index: parent_name (/var/www/akademik/ams/controllers/UserController.php:98)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): UserController->runAction()
+#1 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#4 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(265): UserController->runActionWithFilters()
+#7 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): UserController->run()
+#8 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/user/create.html?type=user
+in /var/www/akademik/ams/controllers/UserController.php (98)
+in /var/www/akademik/index.php (17)
+2016/02/17 17:30:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "landa/city/dynacities".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('landa/city/dyna...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/landa/city/dynacities.html
+HTTP_REFERER=http://localhost/akademik/user/create.html?type=user
+---
+2016/02/17 17:30:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "landa/city/dynacities".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('landa/city/dyna...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/landa/city/dynacities.html
+HTTP_REFERER=http://localhost/akademik/user/create.html?type=user
+---
+2016/02/17 17:30:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /var/www/akademik/ams/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CController.php(270): CController->missingAction('user')
+#1 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('user')
+#2 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('user/user')
+#3 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/akademik/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/akademik/user/user.html
+HTTP_REFERER=http://localhost/akademik/user/create.html?type=user
+---
+2016/02/17 17:31:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:31:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:31:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:33:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:33:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:33:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:33:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:35:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /var/www/akademik/ams/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CController.php(270): CController->missingAction('user')
+#1 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('user')
+#2 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('user/user')
+#3 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/akademik/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/akademik/user/user.html
+HTTP_REFERER=http://localhost/akademik/user/create.html?type=user
+---
+2016/02/17 17:37:04 [error] [php] Missing argument 1 for CController::createUrl(), called in /var/www/akademik/ams/views/user/index.php on line 31 and defined (/var/www/akademik/ams/lib/yii/web/CController.php:959)
+Stack trace:
+#0 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): UserController->renderInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(869): UserController->renderFile()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(782): UserController->renderPartial()
+#4 /var/www/akademik/ams/controllers/UserController.php(453): UserController->render()
+#5 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): UserController->actionStudent()
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): UserController->runAction()
+#8 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#11 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#13 /var/www/akademik/ams/lib/yii/web/CController.php(265): UserController->runActionWithFilters()
+#14 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): UserController->run()
+#15 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/user/student.html
+in /var/www/akademik/ams/views/user/index.php (31)
+in /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/akademik/ams/controllers/UserController.php (453)
+2016/02/17 17:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:37:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:37:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:37:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:37:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:38:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /var/www/akademik/ams/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CController.php(270): CController->missingAction('user')
+#1 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('user')
+#2 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('user/user')
+#3 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/akademik/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/akademik/user/user.html
+HTTP_REFERER=http://localhost/akademik/user/create.html?type=user
+---
+2016/02/17 17:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 17:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/252-150x150-ana-lusiati.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/252-150x150-ana-lusiati.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 17:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user/index.html
+---
+2016/02/17 18:33:50 [warning] [application] Failed to set unsafe attribute "avatar_img" of "User".
+in /var/www/akademik/ams/controllers/UserController.php (92)
+in /var/www/akademik/index.php (17)
+2016/02/17 18:33:50 [warning] [application] Failed to set unsafe attribute "parent_name" of "User".
+in /var/www/akademik/ams/controllers/UserController.php (92)
+in /var/www/akademik/index.php (17)
+2016/02/17 18:33:50 [warning] [application] Failed to set unsafe attribute "parent_number" of "User".
+in /var/www/akademik/ams/controllers/UserController.php (92)
+in /var/www/akademik/index.php (17)
+2016/02/17 18:35:36 [error] [php] include(RolesAuth.php): failed to open stream: No such file or directory (/var/www/akademik/ams/lib/yii/YiiBase.php:427)
+Stack trace:
+#0 /var/www/akademik/ams/components/UserIdentity.php(51): spl_autoload_call()
+#1 /var/www/akademik/ams/models/LoginForm.php(51): UserIdentity->authenticate()
+#2 /var/www/akademik/ams/lib/yii/validators/CInlineValidator.php(42): LoginForm->authenticate()
+#3 /var/www/akademik/ams/lib/yii/validators/CValidator.php(213): CInlineValidator->validateAttribute()
+#4 /var/www/akademik/ams/lib/yii/base/CModel.php(159): CInlineValidator->validate()
+#5 /var/www/akademik/ams/controllers/SiteController.php(92): LoginForm->validate()
+#6 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): SiteController->runAction()
+#9 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#11 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#12 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#13 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#14 /var/www/akademik/ams/lib/yii/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/site/login.html
+in /var/www/akademik/ams/components/UserIdentity.php (51)
+in /var/www/akademik/ams/models/LoginForm.php (51)
+in /var/www/akademik/ams/controllers/SiteController.php (92)
+2016/02/17 18:42:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/17 18:42:17 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.roles" is not defined.' in /var/www/akademik/ams/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/auth/CWebUser.php(146): CComponent->__get('roles')
+#1 /var/www/akademik/ams/components/LandaCore.php(208): CWebUser->__get('roles')
+#2 /var/www/akademik/ams/models/Auth.php(111): LandaCore->checkAccess('Download', 'r')
+#3 /var/www/akademik/ams/themes/spr/views/layouts/main.php(78): Auth->modules()
+#4 /var/www/akademik/ams/lib/yii/web/CBaseController.php(126): require('/var/www/akadem...')
+#5 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/akadem...', Array, true)
+#6 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(SiteController), '/var/www/akadem...', Array, true)
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(784): CBaseController->renderFile('/var/www/akadem...', Array, true)
+#8 /var/www/akademik/ams/controllers/SiteController.php(34): CController->render('index')
+#9 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#17 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/akademik/index.php(17): CApplication->run()
+#22 {main}
+REQUEST_URI=/akademik/index.php
+HTTP_REFERER=http://localhost/akademik/
+---
+2016/02/17 18:47:09 [error] [php] Missing argument 1 for CController::createUrl(), called in /var/www/akademik/ams/views/user/index.php on line 31 and defined (/var/www/akademik/ams/lib/yii/web/CController.php:959)
+Stack trace:
+#0 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): UserController->renderInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(869): UserController->renderFile()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(782): UserController->renderPartial()
+#4 /var/www/akademik/ams/controllers/UserController.php(453): UserController->render()
+#5 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): UserController->actionStudent()
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(133): UserController->runAction()
+#8 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#11 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#13 /var/www/akademik/ams/lib/yii/web/CController.php(265): UserController->runActionWithFilters()
+#14 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): UserController->run()
+#15 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/user/student.html
+in /var/www/akademik/ams/views/user/index.php (31)
+in /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/akademik/ams/controllers/UserController.php (453)
+2016/02/17 18:47:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/akademik/ams/components/Controller.php:61
+Stack trace:
+#0 /var/www/akademik/ams/components/Controller.php(49): Controller->accessDenied()
+#1 /var/www/akademik/ams/lib/yii/base/CComponent.php(612) : eval()'d code(1): Controller->isValidAccess('Student', 'r')
+#2 /var/www/akademik/ams/lib/yii/base/CComponent.php(612): eval()
+#3 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(392): CComponent->evaluateExpression('app()->controll...', Array)
+#4 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched(Object(CWebUser))
+#5 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(UserController), Object(CInlineAction), '127.0.0.1', 'GET')
+#6 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#11 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#14 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/akademik/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/akademik/user/index.html
+HTTP_REFERER=http://localhost/akademik/user/student.html
+---
+2016/02/17 18:48:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/akademik/ams/components/Controller.php:61
+Stack trace:
+#0 /var/www/akademik/ams/components/Controller.php(49): Controller->accessDenied()
+#1 /var/www/akademik/ams/lib/yii/base/CComponent.php(612) : eval()'d code(1): Controller->isValidAccess('Student', 'r')
+#2 /var/www/akademik/ams/lib/yii/base/CComponent.php(612): eval()
+#3 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(392): CComponent->evaluateExpression('app()->controll...', Array)
+#4 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched(Object(CWebUser))
+#5 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(UserController), Object(CInlineAction), '127.0.0.1', 'GET')
+#6 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#11 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#14 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/akademik/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/akademik/user/index.html
+HTTP_REFERER=http://localhost/akademik/user/student.html
+---
+2016/02/17 19:56:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 19:56:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 19:56:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 19:58:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/17 19:58:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/17 19:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /var/www/akademik/ams/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CController.php(270): CController->missingAction('index.php')
+#1 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('index.php')
+#2 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/akademik/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/akademik/site/index.php
+HTTP_REFERER=http://localhost/akademik/site/login.html
+---
+2016/02/17 20:00:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/akademik/ams/components/Controller.php:61
+Stack trace:
+#0 /var/www/akademik/ams/components/Controller.php(49): Controller->accessDenied()
+#1 /var/www/akademik/ams/lib/yii/base/CComponent.php(612) : eval()'d code(1): Controller->isValidAccess('Download', 'r')
+#2 /var/www/akademik/ams/lib/yii/base/CComponent.php(612): eval()
+#3 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(392): CComponent->evaluateExpression('app()->controll...', Array)
+#4 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched(Object(CWebUser))
+#5 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(DownloadCategoryController), Object(CInlineAction), '127.0.0.1', 'GET')
+#6 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#11 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('downloadCategor...')
+#14 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/akademik/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/akademik/downloadCategory.html
+HTTP_REFERER=http://localhost/akademik/index.php
+---
+2016/02/17 20:00:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/akademik/ams/components/Controller.php:61
+Stack trace:
+#0 /var/www/akademik/ams/components/Controller.php(49): Controller->accessDenied()
+#1 /var/www/akademik/ams/lib/yii/base/CComponent.php(612) : eval()'d code(1): Controller->isValidAccess('Student', 'r')
+#2 /var/www/akademik/ams/lib/yii/base/CComponent.php(612): eval()
+#3 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(392): CComponent->evaluateExpression('app()->controll...', Array)
+#4 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(288): CAccessRule->isExpressionMatched(Object(CWebUser))
+#5 /var/www/akademik/ams/lib/yii/web/auth/CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(UserController), Object(CInlineAction), '127.0.0.1', 'GET')
+#6 /var/www/akademik/ams/lib/yii/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/akademik/ams/lib/yii/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/akademik/ams/lib/yii/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(291): CFilterChain->run()
+#11 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('user')
+#14 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/akademik/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/akademik/user.html
+HTTP_REFERER=http://localhost/akademik/index.php
+---
+2016/02/17 20:01:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:01:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:01:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:09:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /var/www/akademik/ams/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CController.php(270): CController->missingAction('user')
+#1 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('user')
+#2 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('user/user')
+#3 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/akademik/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/akademik/user/user.html
+HTTP_REFERER=http://localhost/akademik/user/439.html
+---
+2016/02/17 20:16:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /var/www/akademik/ams/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CController.php(270): CController->missingAction('user')
+#1 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('user')
+#2 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('user/user')
+#3 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/akademik/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/akademik/user/user
+HTTP_REFERER=http://localhost/akademik/user/439.html
+---
+2016/02/17 20:16:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:16:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:16:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:29:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar/index.php".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/index.php
+HTTP_REFERER=http://localhost/akademik/ams/www/akademik.smpplusalkautsar/
+---
+2016/02/17 20:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar/index.php".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/index.php
+HTTP_REFERER=http://localhost/akademik/ams/www/akademik.smpplusalkautsar/
+---
+2016/02/17 20:29:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar/fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/ams/www/akademik.smpplusalkautsar/style.css
+---
+2016/02/17 20:29:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar/index.php".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/index.php
+HTTP_REFERER=http://localhost/akademik/ams/www/akademik.smpplusalkautsar/
+---
+2016/02/17 20:29:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar/index.php".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/index.php
+HTTP_REFERER=http://localhost/akademik/ams/www/akademik.smpplusalkautsar/
+---
+2016/02/17 20:29:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar/index.php".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/index.php
+---
+2016/02/17 20:30:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar/fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/ams/www/akademik.smpplusalkautsar/style.css
+---
+2016/02/17 20:30:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar/ujian".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/ujian/
+HTTP_REFERER=http://localhost/akademik/ams/www/akademik.smpplusalkautsar/
+---
+2016/02/17 20:30:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar/index.php".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/index.php
+HTTP_REFERER=http://localhost/akademik/ams/www/akademik.smpplusalkautsar/
+---
+2016/02/17 20:30:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar/index".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/index.html
+---
+2016/02/17 20:30:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar/index".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/index.html
+---
+2016/02/17 20:30:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar
+---
+2016/02/17 20:34:39 [error] [exception.CException] exception 'CException' with message 'Alias "common.extensions.dualselect.DualSelect" is invalid. Make sure it points to an existing directory or file.' in /var/www/akademik/ams/lib/yii/YiiBase.php:347
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWidgetFactory.php(146): YiiBase::import('common.extensio...', true)
+#1 /var/www/akademik/ams/lib/yii/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(UserClassroomController), 'common.extensio...', Array)
+#2 /var/www/akademik/ams/lib/yii/web/CBaseController.php(172): CBaseController->createWidget('common.extensio...', Array)
+#3 /var/www/akademik/ams/views/userClassroom/index.php(59): CBaseController->widget('common.extensio...', Array)
+#4 /var/www/akademik/ams/lib/yii/web/CBaseController.php(126): require('/var/www/akadem...')
+#5 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/akadem...', Array, true)
+#6 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(UserClassroomController), '/var/www/akadem...', Array, true)
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/akadem...', Array, true)
+#8 /var/www/akademik/ams/lib/yii/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/akademik/ams/controllers/UserClassroomController.php(108): CController->render('index', Array)
+#10 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): UserClassroomController->actionIndex()
+#11 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/akademik/ams/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('')
+#15 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('userClassroom')
+#16 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/akademik/index.php(17): CApplication->run()
+#18 {main}
+REQUEST_URI=/akademik/userClassroom.html
+HTTP_REFERER=http://localhost/akademik/classroom.html
+---
+2016/02/17 20:40:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:40:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:40:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:40:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/17 20:41:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/17 20:41:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR created_user_id=439) AND date_test="2016-02-17"' at line 1. The SQL statement executed was: SELECT * FROM `test` `t` WHERE time_start <="20:41:59" AND time_end >= "20:41:59" AND (classroom_id= OR created_user_id=439) AND date_test="2016-02-17".
+in /var/www/akademik/ams/controllers/TestController.php (181)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 20:41:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR created_user_id=439) AND date_test="2016-02-17"' at line 1. The SQL statement executed was: SELECT * FROM `test` `t` WHERE time_start <="20:41:59" AND time_end >= "20:41:59" AND (classroom_id= OR created_user_id=439) AND date_test="2016-02-17"' in /var/www/akademik/ams/lib/yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/akademik/ams/lib/yii/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /var/www/akademik/ams/lib/yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/akademik/ams/controllers/TestController.php(181): CActiveRecord->findAll(Array)
+#4 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): TestController->actionOnGoing()
+#5 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('onGoing')
+#9 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('test/onGoing')
+#10 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/akademik/ujian/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/akademik/ujian/test/onGoing.html
+HTTP_REFERER=http://localhost/akademik/ujian/site/login.html
+---
+2016/02/17 20:53:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR created_user_id=439) AND date_test="2016-02-17"' at line 1. The SQL statement executed was: SELECT * FROM `test` `t` WHERE time_start <="20:53:39" AND time_end >= "20:53:39" AND (classroom_id= OR created_user_id=439) AND date_test="2016-02-17".
+in /var/www/akademik/ams/controllers/TestController.php (181)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 20:53:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR created_user_id=439) AND date_test="2016-02-17"' at line 1. The SQL statement executed was: SELECT * FROM `test` `t` WHERE time_start <="20:53:39" AND time_end >= "20:53:39" AND (classroom_id= OR created_user_id=439) AND date_test="2016-02-17"' in /var/www/akademik/ams/lib/yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/akademik/ams/lib/yii/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /var/www/akademik/ams/lib/yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/akademik/ams/controllers/TestController.php(181): CActiveRecord->findAll(Array)
+#4 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): TestController->actionOnGoing()
+#5 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('onGoing')
+#9 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('test/onGoing')
+#10 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/akademik/ujian/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/akademik/ujian/test/onGoing.html
+HTTP_REFERER=http://localhost/akademik/ujian/site/login.html
+---
+2016/02/17 20:53:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<br ".' in /var/www/akademik/ams/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CController.php(270): CController->missingAction('<br ')
+#1 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('<br ')
+#2 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('test/<br /><b>F...')
+#3 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/akademik/ujian/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/akademik/ujian/test/%3Cbr%20/%3E%3Cb%3EFatal%20error%3C/b%3E:%20%20Call%20to%20undefined%20function%20bt()%20in%20%3Cb%3E/var/www/akademik/ams/themes/ujian/views/layouts/mainWide.php%3C/b%3E%20on%20line%20%3Cb%3E9%3C/b%3E%3Cbr%20/%3E%3Cdiv%20id=
+HTTP_REFERER=http://localhost/akademik/ujian/test/onGoing.html
+---
+2016/02/17 20:56:02 [error] [php] in_array() expects parameter 2 to be array, null given (/var/www/akademik/ams/themes/ujian/views/layouts/mainWide.php:73)
+Stack trace:
+#0 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): TestController->renderInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(784): TestController->renderFile()
+#3 /var/www/akademik/ams/controllers/TestController.php(184): TestController->render()
+#4 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): TestController->actionOnGoing()
+#5 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#8 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#9 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/onGoing.html
+in /var/www/akademik/ams/themes/ujian/views/layouts/mainWide.php (73)
+in /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/akademik/ams/controllers/TestController.php (184)
+2016/02/17 20:56:42 [error] [php] in_array() expects parameter 2 to be array, null given (/var/www/akademik/ams/themes/ujian/views/layouts/mainWide.php:78)
+Stack trace:
+#0 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): TestController->renderInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(784): TestController->renderFile()
+#3 /var/www/akademik/ams/controllers/TestController.php(184): TestController->render()
+#4 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): TestController->actionOnGoing()
+#5 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#8 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#9 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/onGoing.html
+in /var/www/akademik/ams/themes/ujian/views/layouts/mainWide.php (78)
+in /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/akademik/ams/controllers/TestController.php (184)
+2016/02/17 22:11:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/17 22:11:49 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.ecountdown.ECountDown" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/akademik/ams/lib/yii/YiiBase.php:322
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 /var/www/akademik/ams/lib/yii/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(TestController), 'application.ext...', Array)
+#2 /var/www/akademik/ams/lib/yii/web/CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 /var/www/akademik/ams/views/test/go.php(88): CBaseController->widget('application.ext...', Array)
+#4 /var/www/akademik/ams/lib/yii/web/CBaseController.php(126): require('/var/www/akadem...')
+#5 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/akadem...', Array, true)
+#6 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(TestController), '/var/www/akadem...', Array, true)
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/akadem...', Array, true)
+#8 /var/www/akademik/ams/lib/yii/web/CController.php(782): CController->renderPartial('go', Array, true)
+#9 /var/www/akademik/ams/controllers/TestController.php(290): CController->render('go', Array)
+#10 [internal function]: TestController->actionGo('464')
+#11 /var/www/akademik/ams/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#12 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(TestController), Object(ReflectionMethod), Array)
+#13 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /var/www/akademik/ams/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#15 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('go')
+#17 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('test/go')
+#18 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/akademik/ujian/index.php(17): CApplication->run()
+#20 {main}
+REQUEST_URI=/akademik/ujian/test/go/464.html
+HTTP_REFERER=http://localhost/akademik/ujian/test/onGoing.html
+---
+2016/02/17 22:16:57 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4227.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:19:04 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4245.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:19:08 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4021.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:19:13 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4236.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:19:15 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4237.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:19:17 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4025.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:19:21 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4025.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:20:56 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4237.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:20:57 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4237.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:23:40 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4234.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:25:15 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4236.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:28:23 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4242.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:29:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/350x350-noimage.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('img/350x350-noi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/ujian/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ujian/img/350x350-noimage.jpg
+HTTP_REFERER=http://localhost/akademik/ujian/test/finish/464.html
+---
+2016/02/17 22:29:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/17 22:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/17 22:29:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/17 22:30:23 [error] [php] in_array() expects parameter 2 to be array, null given (/var/www/akademik/ams/themes/ujian/views/layouts/main.php:44)
+Stack trace:
+#0 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): TestResultController->renderInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(784): TestResultController->renderFile()
+#3 /var/www/akademik/ams/controllers/TestResultController.php(74): TestResultController->render()
+#4 unknown(0): TestResultController->actionView()
+#5 /var/www/akademik/ams/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#6 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestResultController->runAction()
+#9 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestResultController->runActionWithFilters()
+#10 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestResultController->run()
+#11 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/testResult/6027.html
+in /var/www/akademik/ams/themes/ujian/views/layouts/main.php (44)
+in /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/akademik/ams/controllers/TestResultController.php (74)
+2016/02/17 22:30:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/akademik/ams/controllers/TestController.php:305
+Stack trace:
+#0 [internal function]: TestController->actionFinish('464')
+#1 /var/www/akademik/ams/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#2 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(TestController), Object(ReflectionMethod), Array)
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/akademik/ams/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('finish')
+#7 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('test/finish')
+#8 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/akademik/ujian/index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/akademik/ujian/test/finish/464.html
+HTTP_REFERER=http://localhost/akademik/ujian/test/go/464.html
+---
+2016/02/17 22:30:31 [error] [php] in_array() expects parameter 2 to be array, null given (/var/www/akademik/ams/themes/ujian/views/layouts/mainWide.php:56)
+Stack trace:
+#0 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): TestController->renderInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(784): TestController->renderFile()
+#3 /var/www/akademik/ams/controllers/TestController.php(290): TestController->render()
+#4 unknown(0): TestController->actionGo()
+#5 /var/www/akademik/ams/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#6 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#9 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#10 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#11 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/go/464.html
+in /var/www/akademik/ams/themes/ujian/views/layouts/mainWide.php (56)
+in /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/akademik/ams/controllers/TestController.php (290)
+2016/02/17 22:36:26 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.roles_id" is not defined.' in /var/www/akademik/ams/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/auth/CWebUser.php(146): CComponent->__get('roles_id')
+#1 /var/www/akademik/ams/views/test/_statsLi.php(3): CWebUser->__get('roles_id')
+#2 /var/www/akademik/ams/lib/yii/web/CBaseController.php(126): require('/var/www/akadem...')
+#3 /var/www/akademik/ams/lib/yii/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/akadem...', Array, true)
+#4 /var/www/akademik/ams/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/akadem...', Array, true)
+#5 /var/www/akademik/ams/controllers/TestController.php(198): CController->renderPartial('_statsLi', Array)
+#6 [internal function]: TestController->actionStatsLi('465')
+#7 /var/www/akademik/ams/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#8 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(TestController), Object(ReflectionMethod), Array)
+#9 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('statsLi')
+#13 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('test/statsLi')
+#14 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/akademik/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/akademik/test/statsLi/465.html
+HTTP_REFERER=http://localhost/akademik/test/465.html
+---
+2016/02/17 22:36:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/17 22:36:31 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.roles_id" is not defined.' in /var/www/akademik/ams/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/auth/CWebUser.php(146): CComponent->__get('roles_id')
+#1 /var/www/akademik/ams/views/test/_statsLi.php(3): CWebUser->__get('roles_id')
+#2 /var/www/akademik/ams/lib/yii/web/CBaseController.php(126): require('/var/www/akadem...')
+#3 /var/www/akademik/ams/lib/yii/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/akadem...', Array, true)
+#4 /var/www/akademik/ams/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/akadem...', Array, true)
+#5 /var/www/akademik/ams/controllers/TestController.php(198): CController->renderPartial('_statsLi', Array)
+#6 [internal function]: TestController->actionStatsLi('465')
+#7 /var/www/akademik/ams/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#8 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(TestController), Object(ReflectionMethod), Array)
+#9 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('statsLi')
+#13 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('test/statsLi')
+#14 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/akademik/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/akademik/test/statsLi/465.html
+HTTP_REFERER=http://localhost/akademik/test/465.html
+---
+2016/02/17 22:36:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/350x350-noimage.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('img/350x350-noi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/ujian/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ujian/img/350x350-noimage.jpg
+HTTP_REFERER=http://localhost/akademik/ujian/test/finish/464.html
+---
+2016/02/17 22:36:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/350x350-noimage.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('img/350x350-noi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/ujian/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ujian/img/350x350-noimage.jpg
+HTTP_REFERER=http://localhost/akademik/ujian/test/finish/464.html
+---
+2016/02/17 22:36:47 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4146.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:45:44 [error] [php] Undefined index: test_result_id (/var/www/akademik/ams/controllers/TestController.php:349)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/akademik/ujian/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/ujian/test/resultDetail/4145.html
+in /var/www/akademik/ams/controllers/TestController.php (349)
+in /var/www/akademik/ujian/index.php (17)
+2016/02/17 22:47:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/350x350-noimage.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('img/350x350-noi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/ujian/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ujian/img/350x350-noimage.jpg
+HTTP_REFERER=http://localhost/akademik/ujian/test/finish/465.html
+---
+2016/02/17 22:47:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/350x350-noimage.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('img/350x350-noi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/ujian/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ujian/img/350x350-noimage.jpg
+HTTP_REFERER=http://localhost/akademik/ujian/test/finish/465.html
+---

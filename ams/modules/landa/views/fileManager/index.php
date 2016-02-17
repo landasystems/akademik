@@ -8,7 +8,7 @@ $filesUrl = param('urlImg');
  trace($filesPath);
  trace($filesUrl);
  
-$this->widget("common.extensions.ezzeelfinder.ElFinderWidget", array(
+$this->widget("application.extensions.ezzeelfinder.ElFinderWidget", array(
     'selector' => "div#file-uploader",
     'clientOptions' => array(
 //        'lang' => "id",

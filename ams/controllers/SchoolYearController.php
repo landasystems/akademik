@@ -9,32 +9,7 @@ class SchoolYearController extends Controller
 	 */
 	public $layout='main';
 
-	public function filters() {
-        return array(
-            'accessControl', // perform access control for CRUD operations
-        );
-    }
-
-    public function accessRules() {
-        return array(
-            array('allow', // c
-                'actions' => array('create'),
-                'expression' => 'app()->controller->isValidAccess("SchoolYear","c")'
-            ),
-            array('allow', // r
-                'actions' => array('index', 'view'),
-                'expression' => 'app()->controller->isValidAccess("SchoolYear","r")'
-            ),
-            array('allow', // u
-                'actions' => array('update'),
-                'expression' => 'app()->controller->isValidAccess("SchoolYear","u")'
-            ),
-            array('allow', // d
-                'actions' => array('delete'),
-                'expression' => 'app()->controller->isValidAccess("SchoolYear","d")'
-            )
-        );
-    }
+	
 
 	/**
 	 * Displays a particular model.
@@ -191,68 +166,5 @@ class SchoolYearController extends Controller
 			Yii::app()->end();
 		}
 	}
-        public function actionGenerateExcel()
-	{
-            $session=new CHttpSession;
-            $session->open();		
-            
-             if(isset($session['SchoolYear_records']))
-               {
-                $model=$session['SchoolYear_records'];
-               }
-               else
-                 $model = SchoolYear::model()->findAll();
-
-		
-		Yii::app()->request->sendFile(date('YmdHis').'.xls',
-			$this->renderPartial('excelReport', array(
-				'model'=>$model
-			), true)
-		);
-	}
-        public function actionGeneratePdf() 
-	{
-           
-           $session=new CHttpSession;
-           $session->open();
-		Yii::import('application.modules.admin.extensions.giiplus.bootstrap.*');
-		require_once(Yii::getPathOfAlias('common').'/extensions/tcpdf/tcpdf.php');
-		require_once(Yii::getPathOfAlias('common').'/extensions/tcpdf/config/lang/eng.php');
-
-             if(isset($session['SchoolYear_records']))
-               {
-                $model=$session['SchoolYear_records'];
-               }
-               else
-                 $model = SchoolYear::model()->findAll();
-
-
-
-		$html = $this->renderPartial('expenseGridtoReport', array(
-			'model'=>$model
-		), true);
-		
-		//die($html);
-		
-		$pdf = new TCPDF();
-		$pdf->SetCreator(PDF_CREATOR);
-		$pdf->SetAuthor(Yii::app()->name);
-		$pdf->SetTitle('Laporan SchoolYear');
-		$pdf->SetSubject('Laporan SchoolYear Report');
-		//$pdf->SetKeywords('example, text, report');
-		$pdf->SetHeaderData('', 0, "Report", '');
-		//$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, "Laporan" SchoolYear, "");
-		$pdf->SetHeaderData("", "", "Laporan SchoolYear", "");
-		$pdf->setHeaderFont(Array('helvetica', '', 8));
-		$pdf->setFooterFont(Array('helvetica', '', 6));
-		$pdf->SetMargins(15, 18, 15);
-		$pdf->SetHeaderMargin(5);
-		$pdf->SetFooterMargin(10);
-		$pdf->SetAutoPageBreak(TRUE, 0);
-		$pdf->SetFont('dejavusans', '', 7);
-		$pdf->AddPage();
-		$pdf->writeHTML($html, true, false, true, false, '');
-		$pdf->LastPage();
-		$pdf->Output("SchoolYear_002.pdf", "I");
-	}
+        
 }
