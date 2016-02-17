@@ -1,8 +1,4 @@
 <?php
-$this->breadcrumbs=array(
-	'Exams'=>array('index'),
-	'Manage',
-);
 
 $this->menu=array(
 	array('label'=>'List Exam','url'=>array('index')),

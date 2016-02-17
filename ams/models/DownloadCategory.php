@@ -70,7 +70,7 @@ class DownloadCategory extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
+			'name' => 'Dokumen Kategori',
 			'description' => 'Description',
 			'level' => 'Level',
 			'lft' => 'Lft',

@@ -1,8 +1,5 @@
 <?php
 $this->setPageTitle('Absents');
-$this->breadcrumbs=array(
-	'Absents',
-);
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){

@@ -1,8 +1,5 @@
 <?php
-$this->setPageTitle('Exams');
-$this->breadcrumbs = array(
-    'Exams',
-);
+$this->setPageTitle('Soal Ujian');
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -30,8 +27,6 @@ $this->widget('bootstrap.widgets.TbMenu', array(
         array('label' => 'Tambah', 'icon' => 'icon-plus', 'url' => Yii::app()->controller->createUrl('create'), 'linkOptions' => array(), 'visible' => landa()->checkAccess('Exam', 'c')),
         array('label' => 'Daftar', 'icon' => 'icon-th-list', 'url' => Yii::app()->controller->createUrl('index'), 'active' => true, 'linkOptions' => array()),
         array('label' => 'Pencarian', 'icon' => 'icon-search', 'url' => '#', 'linkOptions' => array('class' => 'search-button')),
-        array('label' => 'Export ke PDF', 'icon' => 'icon-download', 'url' => Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions' => array('target' => '_blank'), 'visible' => true),
-        array('label' => 'Export ke Excel', 'icon' => 'icon-download', 'url' => Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions' => array('target' => '_blank'), 'visible' => true),
     ),
 ));
 $this->endWidget();
@@ -66,7 +61,6 @@ $this->widget('bootstrap.widgets.TbGridView', array(
     'type' => 'striped bordered condensed',
     'template' => '{summary}{pager}{items}{pager}',
     'columns' => array(
-        'id',
         array(
             'header'=>'Created By',
             'name' => 'created_user_id',
@@ -75,14 +69,13 @@ $this->widget('bootstrap.widgets.TbGridView', array(
         ),
         //'ExamCategory.name',
         array(
-            'header'=>'Exam Category',
+            'header'=>'Kategori Ujian',
             'type'=>'raw',
             'name' => 'exam_category_id',
             'value' => '$data->ExamCategory["name"]',
             'htmlOptions' => array('style' => 'text-align: left;')
         ),
         'name',
-        'description',
         'period',
         array(
             'value' => '$data->urlExamDet',

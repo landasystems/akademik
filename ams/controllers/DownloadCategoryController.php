@@ -155,7 +155,7 @@ class DownloadCategoryController extends Controller {
             }
 
             landa()->deleteDir('images/' . $model->path);
-            cmd('DELETE FROM acca_download WHERE download_category_id IN (' . implode(',', $sWhere) . ')')->execute();
+            cmd('DELETE FROM download WHERE download_category_id IN (' . implode(',', $sWhere) . ')')->execute();
 
             // we only allow deletion via POST request
             $model->deleteNode();

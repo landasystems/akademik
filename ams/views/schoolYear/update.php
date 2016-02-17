@@ -1,10 +1,5 @@
 <?php
-$this->setPageTitle('Edit School Years | ID : '. $model->id);
-$this->breadcrumbs=array(
-	'School Years'=>array('index'),
-	$model->name=>array('view','id'=>$model->id),
-	'Update',
-);
+$this->setPageTitle('Edit Tahun Ajaran');
 
 ?>
 

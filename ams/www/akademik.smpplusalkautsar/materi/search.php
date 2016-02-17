@@ -66,7 +66,7 @@ $db->connectMysql();
 $no=0;
 include "connect.php";
 $url= $_POST['url'];
-$q = "SELECT * from acca_download where url like '%$url%' ";
+$q = "SELECT * from download where url like '%$url%' ";
 $result = mysql_query($q);
 
 echo "<center>";

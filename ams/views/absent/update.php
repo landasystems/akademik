@@ -1,10 +1,6 @@
 <?php
 $this->setPageTitle('Edit Absents | ID : '. $model->id);
-$this->breadcrumbs=array(
-	'Absents'=>array('index'),
-	$model->id=>array('view','id'=>$model->id),
-	'Update',
-);
+
 
 ?>
 

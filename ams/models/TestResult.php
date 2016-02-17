@@ -106,14 +106,14 @@ class TestResult extends CActiveRecord {
     public function isFinish($test_id, $user_id){
 //        $results = cmd()
 //                ->select('tr.time_end')
-//                ->from('acca_test t')
-//                ->join('acca_test_result tr', 'tr.test_id=t.id')
+//                ->from('test t')
+//                ->join('test_result tr', 'tr.test_id=t.id')
 //                ->where('tr.user_id='.$user_id.' AND t.exam_id='.$exam_id)
 //                ->queryRow();
         $results = cmd()
                 ->select('tr.time_end')
-                ->from('acca_test t')
-                ->join('acca_test_result tr', 'tr.test_id=t.id')
+                ->from('test t')
+                ->join('test_result tr', 'tr.test_id=t.id')
                 ->where('tr.user_id='.$user_id.' AND t.id='.$test_id)
                 ->queryRow();
         

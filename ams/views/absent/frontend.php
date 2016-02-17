@@ -41,11 +41,11 @@ if ($hari_id == "Minggu" or in_array($dateNow, $tanggalMerah)) {
     <div style="margin-top: 30px; margin-left: 5%; margin-right: 5%;">
         <div class="row-fluid">
             <div class="span12">
-                <div id="left" class="span5" style="background-color: white">
+                <div id="left" class="span5" style="background-color: white;padding-top: 5px !important">
                     <fieldset>
-                        <legend>Absensi Hari Ini</legend>
+                        <legend style="text-align: center">Absensi Hari Ini</legend>
                     </fieldset>
-                    <div style="height: 450px;overflow-y: scroll;padding: 5px;">
+                    <div style="height: 300px;overflow-y: scroll;padding: 5px;">
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>

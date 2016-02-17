@@ -220,7 +220,7 @@ class ExamDetailController extends Controller {
             
         } else {
             //update all which has higher number , min 1
-            cmd('UPDATE acca_exam_detail SET number=number-1 WHERE number > ' . $model->number . ' AND exam_id=' . $_GET['exam_id'])->execute();
+            cmd('UPDATE exam_detail SET number=number-1 WHERE number > ' . $model->number . ' AND exam_id=' . $_GET['exam_id'])->execute();
 
             $modelExam = Exam::model()->findByPk($_GET['exam_id']);
             $modelExam->total -= 1;

@@ -1,8 +1,6 @@
 <?php
-$this->setPageTitle('Tests');
-$this->breadcrumbs = array(
-    'Tests',
-);
+$this->setPageTitle('Jadwal Ujian');
+
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -30,8 +28,6 @@ $this->widget('bootstrap.widgets.TbMenu', array(
         array('label' => 'Tambah', 'icon' => 'icon-plus', 'url' => Yii::app()->controller->createUrl('create'), 'linkOptions' => array(), 'visible' => landa()->checkAccess('Test', 'c')),
         array('label' => 'Daftar', 'icon' => 'icon-th-list', 'url' => Yii::app()->controller->createUrl('index'), 'active' => true, 'linkOptions' => array()),
         array('label' => 'Pencarian', 'icon' => 'icon-search', 'url' => '#', 'linkOptions' => array('class' => 'search-button')),
-        array('label' => 'Export ke PDF', 'icon' => 'icon-download', 'url' => Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions' => array('target' => '_blank'), 'visible' => true),
-        array('label' => 'Export ke Excel', 'icon' => 'icon-download', 'url' => Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions' => array('target' => '_blank'), 'visible' => true),
     ),
 ));
 $this->endWidget();
@@ -66,9 +62,8 @@ $this->widget('bootstrap.widgets.TbGridView', array(
     'type' => 'striped bordered condensed',
     'template' => '{summary}{pager}{items}{pager}',
     'columns' => array(
-        'id',
         array(
-            'header' => 'Classroom',
+            'header' => 'Kelas',
             'type' => 'raw',
             'name' => 'classroom_id',
             'value' => '$data->Classroom["name"]',
@@ -81,7 +76,7 @@ $this->widget('bootstrap.widgets.TbGridView', array(
             'value' => '$data->User["name"]',
         ),
         array(
-            'header' => 'Exam name',
+            'header' => 'Soal',
             'type' => 'raw',
             'name' => 'exam_id',
             'value' => '$data->Exam["name"]',

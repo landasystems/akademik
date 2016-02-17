@@ -45,9 +45,9 @@
                   'modified',
                  */
                 array(
-                    'value' => '"<a href=\"$data->urlFull\" class=\"btn btn-small cut-icon-download\"></a>"',
+                    'value' => '"<a href=\"$data->urlFull\" class=\"btn btn-small icon-download\"></a>"',
                     'type' => 'raw',
-                    'htmlOptions' => array('style' => 'width: 20px;'),
+                    'htmlOptions' => array('style' => 'width: 35px;'),
                 ),
                 array(
                     'class' => 'bootstrap.widgets.TbButtonColumn',

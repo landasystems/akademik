@@ -1,10 +1,6 @@
 <?php
-$this->setPageTitle('Edit Exam Categories | ID : '. $model->id);
-$this->breadcrumbs=array(
-	'Exam Categories'=>array('index'),
-	$model->name=>array('view','id'=>$model->id),
-	'Update',
-);
+$this->setPageTitle('Edit Kategori Soal');
+
 
 ?>
 

@@ -1,9 +1,6 @@
 <?php
 $this->setPageTitle('Add Document');
-$this->breadcrumbs=array(
-	'Downloads'=>array('index'),
-	'Create',
-);
+
 
 ?>
 

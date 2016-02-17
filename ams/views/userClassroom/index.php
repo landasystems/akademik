@@ -1,8 +1,5 @@
 <?php
-$this->setPageTitle('User Classrooms');
-$this->breadcrumbs = array(
-    'User Classrooms',
-);
+$this->setPageTitle('Penempatan Kelas');
 ?>
 
 <?php
@@ -26,7 +23,7 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 <div class="well">
     <h4>Filter : </h4>
     <div class="control-group ">
-        <label class="control-label">School Year</label>
+        <label class="control-label">Tahun Ajaran</label>
         <div class="controls">
             <?php
             echo CHtml::dropDownList('school_year_id', array(date('Y')), SchoolYear::model()->listData(), array(
@@ -41,7 +38,7 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
     </div>
 
     <div class="control-group ">
-        <label class="control-label">Classroom</label>
+        <label class="control-label">Kelas</label>
         <div class="controls">
             <?php
             echo CHtml::dropDownList('classroom_id', array(), array(), array(
@@ -58,7 +55,7 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 
 <div class="well">
     <?php
-    $this->widget('common.extensions.dualselect.DualSelect', array('title' => array('box1View' => 'haven`t get Classroom', 'box2View' => 'in Class'),
+    $this->widget('common.extensions.dualselect.DualSelect', array('title' => array('box1View' => 'Belum mendapatkan Kelas', 'box2View' => 'Murid yang yang menempati Kelas'),
         'value' => array('box1View' => Classroom::model()->haventClass, 'box2View' => array())));
     ?>
 

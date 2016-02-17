@@ -15,7 +15,7 @@
                     <div class="title">
                         <h4>
                             <span class="icon16 iconic-icon-bars"></span>
-                            <span>Latest Public Document Items</span>
+                            <span>Dokumen Terbaru</span>
                         </h4>
                         <a href="#" class="minimize" style="display: none;">Minimize</a>
                     </div>
@@ -28,22 +28,21 @@
                             'type' => 'striped bordered condensed',
                             'template' => '{pager}{items}{pager}',
                             'columns' => array(
-                                'id',
                                 'DownloadCategory.name',
                                 array(
                                     'name' => 'File Name',
                                     'value' => '$data->url',
                                     'htmlOptions' => array('style' => 'text-align: left;')
                                 ),
-                                'created',
+//                                'created',
                                 /*
                                   'created_user_id',
                                   'modified',
                                  */
                                 array(
-                                    'value' => '"<a href=\"$data->urlFull\" class=\"btn btn-small cut-icon-download\"></a>"',
+                                    'value' => '"<a href=\"$data->urlFull\" class=\"btn btn-small icon-download\"></a>"',
                                     'type' => 'raw',
-                                    'htmlOptions' => array('style' => 'width: 20px;')
+                                    'htmlOptions' => array('style' => 'width: 35px;')
                                 ),
                             ),
                         ));

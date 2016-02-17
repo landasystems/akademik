@@ -50,7 +50,7 @@ class SiteConfigHoliday extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'date_holiday' => 'Date Holiday',
+			'date_holiday' => 'Hari Libur',
 		);
 	}
 

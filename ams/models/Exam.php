@@ -74,11 +74,11 @@ class Exam extends CActiveRecord {
             'id' => 'ID',
             'exam_category_id' => 'Kategori Soal',
             'school_year_id' => 'Tahun ajaran',
-            'name' => 'Name',
+            'name' => 'Nama Soal',
             'description' => 'Description',
-            'period' => 'Period',
-            'public' => 'Public',
-            'key' => 'Key',
+            'period' => 'Waktu',
+            'public' => 'Guru lain boleh memakai soal ini',
+            'key' => 'Tampilkan kunci jawaban setelah siswa selesai',
             'created' => 'Created',
             'created_user_id' => 'Created Exam',
             'modified' => 'Modified',
@@ -148,10 +148,10 @@ class Exam extends CActiveRecord {
     }
 
     public function examResult($ids, $exam_id) {
-        $results = cmd('SELECT u.id, test.result FROM acca_user u LEFT JOIN 
+        $results = cmd('SELECT u.id, test.result FROM user u LEFT JOIN 
                         (
                             SELECT tr.result, tr.user_id
-                            FROM acca_test t INNER JOIN acca_test_result tr
+                            FROM test t INNER JOIN test_result tr
                             ON tr.test_id = t.id
                             WHERE t.exam_id = ' . $exam_id . ' AND tr.is_fix=1
                         ) AS test
@@ -171,7 +171,7 @@ class Exam extends CActiveRecord {
 
     public function getUrlExamDet() {
         $detail = url('examDetail/create/' . $this->id);
-        return '<a href="' . $detail . '" class="btn btn-small brocco-icon-list"></a>';
+        return '<a href="' . $detail . '" class="btn btn-small icon-list"></a>';
     }
 
 }

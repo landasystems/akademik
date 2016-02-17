@@ -42,7 +42,7 @@ class Test extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name, time_start, time_end', 'required'),
+            array('time_start, time_end', 'required'),
             array('classroom_id, exam_id, exam_total, created_user_id, result_max', 'numerical', 'integerOnly' => true),
             array('name, description', 'length', 'max' => 255),
             array('date_test, created, modified', 'safe'),
@@ -72,16 +72,16 @@ class Test extends CActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'classroom_id' => 'Classroom',
-            'exam_id' => 'Exam',
+            'classroom_id' => 'Kelas',
+            'exam_id' => 'Soal Ujian',
             'name' => 'Name',
-            'description' => 'Description',
-            'date_test' => 'Date Test',
-            'time_start' => 'Time Start',
-            'time_end' => 'Time End',
-            'exam_total' => 'Exam Total',
+            'description' => 'Keterangan',
+            'date_test' => 'Tanggal',
+            'time_start' => 'Mulai',
+            'time_end' => 'Selesai',
+            'exam_total' => 'Jumlah Soal',
             'created' => 'Created',
-            'created_user_id' => 'Created Schedule',
+            'created_user_id' => 'Created By',
             'modified' => 'Modified',
             'result_max' => 'Nilai Maksimal',
         );

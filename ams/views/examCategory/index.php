@@ -1,8 +1,5 @@
 <?php
-$this->setPageTitle('Exam Categories');
-$this->breadcrumbs=array(
-	'Exam Categories',
-);
+$this->setPageTitle('Pengelompokan Ujian');
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -31,8 +28,6 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 		array('label'=>'Tambah', 'icon'=>'icon-plus', 'url'=>Yii::app()->controller->createUrl('create'), 'linkOptions'=>array(),'visible'=>landa()->checkAccess('ExamCategory','c')),
                 array('label'=>'Daftar', 'icon'=>'icon-th-list', 'url'=>Yii::app()->controller->createUrl('index'),'active'=>true, 'linkOptions'=>array()),
 		array('label'=>'Pencarian', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button')),
-		array('label'=>'Export ke PDF', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
-		array('label'=>'Export ke Excel', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
 	),
 ));
 $this->endWidget();
@@ -51,9 +46,6 @@ $this->endWidget();
 <?php 
 $buton = '';
 
-if (landa()->checkAccess('ExamCategory', 'r'))
-    $buton .= '{view}';
-
 if (landa()->checkAccess('ExamCategory', 'u'))
     $buton .= '{update} ';
 
@@ -66,24 +58,16 @@ $this->widget('bootstrap.widgets.TbGridView',array(
         'type'=>'striped bordered condensed',
         'template'=>'{summary}{pager}{items}{pager}',
 	'columns'=>array(
-		'id',
 		array(
             'name' => 'name',
             'value' => '$data->nestedname',
             'htmlOptions'=>array('style' => 'text-align: left;')
         ),
-		'description',
 		
        array(
             'class'=>'bootstrap.widgets.TbButtonColumn',
 			'template' => $buton,
 			'buttons' => array(
-			      'view' => array(
-					'label'=> 'Lihat',
-					'options'=>array(
-						'class'=>'btn btn-small view'
-					)
-				),	
                               'update' => array(
 					'label'=> 'Edit',
 					'options'=>array(

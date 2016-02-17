@@ -1,0 +1,751 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  font: 13px/20px "Open Sans", Tahoma, Verdana, sans-serif;
+  color: #a7a599;
+  background: #F3FF0B;
+  background-image: url("image/login-background.jpg");
+  background-size:1400px;
+}
+
+/* === Form === */
+.form {
+    width: 100%;
+}
+
+.form .field {
+    position: relative;
+    margin: 0 50px;
+}
+
+.form .field i {
+    font-size: 14px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    color: #f7f3eb;
+    background: #676056;
+    text-align: center;
+    line-height: 44px;
+    transition: all 0.3s ease-out;
+    pointer-events: none;
+}
+
+/* === Logo === */
+.logo {
+  background-image: url("image/favicon.png");
+  background-size:105px;
+  background-position: center;
+  height: 85px;
+  width: 120px;
+  margin: 100px auto 30px auto;
+}
+
+/* === Login === */
+.login {
+  position: relative;
+  margin: 0 auto;
+  width: 370px;
+  height: 315px;
+  background: white;
+  border-radius: 3px;
+}
+
+.login:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.login h1 {
+  line-height: 55px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  background: #049A09;
+
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.login p:first-child {
+  margin-top: 30px;
+}
+
+.login p.remember {
+  float: left;
+}
+
+.login p.remember label {
+  color: #a7a599;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.login p.submit {
+  text-align: center;
+}
+
+.login p.forgot {
+  float: right;
+  margin-right: 50px;
+}
+
+.login p.forgot a {
+  color: #a7a599;
+  font-size: 12px;
+  text-decoration: none;
+  font-style: italic;
+  transition: all 0.3s ease-out;
+}
+
+.login p.forgot a:hover {
+  color: #049A09;
+}
+
+/* === Input Form === */
+::-webkit-input-placeholder {
+  color: #B4B0A9;
+  font-family:'Open Sans';
+}
+
+:-moz-placeholder {
+  color: #B4B0A9 !important;
+  font-family:'Open Sans';
+}
+
+.form input[type=text],
+.form input[type=password] {
+    font-family: 'Open Sans', Calibri, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 15px 10px 55px;
+    position: relative;
+    width: 270px;
+    color: #000000;
+    border: none;
+    background: #f7f3eb;
+    color: #777;
+    transition: color 0.3s ease-out;
+}
+
+.form input[type=text] {
+    margin-bottom: 15px;
+}
+
+.form input[type=text]:hover ~ i,
+.form input[type=password]:hover ~ i {
+    color: #ded9cf;
+}
+
+.form input[type=text]:focus ~ i,
+.form input[type=password]:focus ~ i {
+    color: #049A09;
+}
+
+.form input[type=text]:focus,
+.form input[type=password]:focus,
+.form button[type=submit]:focus {
+    outline: none;
+}
+
+.form input[type=submit] {
+  margin-top: 15px;
+  width: 270px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  padding: 12px 0;
+  letter-spacing: 0;
+
+  -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+  -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+  box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+
+  color: #fff;
+  background-color: #049A09;
+  text-shadow: none;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-animation: shadowFadeOut 0.4s;
+  -moz-animation: shadowFadeOut 0.4s;
+}
+
+.form input[type=submit]:hover,input[type=submit]:focus{
+  color: #fff;
+  -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+  -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+  box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+  -webkit-animation: shadowFade 0.4s;
+  -moz-animation: shadowFade 0.4s;
+}
+
+@keyframes shadowFade {
+    0% {
+      -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+    100% {
+      -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+}
+
+@keyframes shadowFadeOut {
+    0% {
+      -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+    100% {
+      -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+}
+
+@-webkit-keyframes shadowFade {
+    0% {
+      -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+    100% {
+      -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+}
+
+@-webkit-keyframes shadowFadeOut {
+    0% {
+      -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+    100% {
+      -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+}
+
+@-moz-keyframes shadowFade {
+    0% {
+      -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+    100% {
+      -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+}
+
+@-moz-keyframes shadowFadeOut {
+    0% {
+      -webkit-box-shadow: inset 0px 44px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 44px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 44px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+    100% {
+      -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+      -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+      box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+      color: #fff;
+    }
+}
+
+.form input[type="checkbox"] {
+    display:none;
+}
+
+.form input[type="checkbox"] + label span {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    margin: -2px 4px 0 50px;
+    vertical-align:middle;
+    background:url("image/checkbox.png") left top no-repeat;
+    cursor:pointer;
+}
+.form input[type="checkbox"]:checked + label span {
+    background:url("image/checkbox.png") -16px top no-repeat;
+}
+
+/* === Copyright === */
+.copyright {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.copyright p, a {
+  color: #828078;
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.copyright a:hover {
+  color: #f2672e;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(font/DXI1ORHCpsQm3Vp6mXoaTSUUniRZcd_wq8DYmIfsw2A.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(font/DXI1ORHCpsQm3Vp6mXoaTeXREeHhJi4GEUJI9ob_ak4.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(font/DXI1ORHCpsQm3Vp6mXoaTY0Uz7fbu6RM5MPetubMKio.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(font/DXI1ORHCpsQm3Vp6mXoaTfzy0yu4vcvNhe7QLuoE8rU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(font/DXI1ORHCpsQm3Vp6mXoaTc9-ZSaZ3mOOsU9E1f6DGWc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(font/DXI1ORHCpsQm3Vp6mXoaTYZI5FoslwusAsZHK_V0XCI.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(font/DXI1ORHCpsQm3Vp6mXoaTRUOjZSKWg4xBWp_C_qQx0o.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(font/DXI1ORHCpsQm3Vp6mXoaTRUOjZSKWg4xBWp_C_qQx0o.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(font/K88pR3goAWT7BTt32Z01m1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(font/RjgO7rYTmqiVp7vzi-Q5UVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(font/ttwNtsRpgsxVmgGGmiUOEltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(font/LWCjsQkB6EMdfHrEVqA1KVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(font/xozscpT2726on7jbcb_pAltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/59ZRklaO5bWGqF5A9baEEVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/u-WUoqrET9fUeobQW7jkRVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzCUUniRZcd_wq8DYmIfsw2A.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzOXREeHhJi4GEUJI9ob_ak4.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzI0Uz7fbu6RM5MPetubMKio.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzPzy0yu4vcvNhe7QLuoE8rU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzM9-ZSaZ3mOOsU9E1f6DGWc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzIZI5FoslwusAsZHK_V0XCI.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzBUOjZSKWg4xBWp_C_qQx0o.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxnJcj75aoY2FkN1K7fN5pSM.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxn1Xmpo4ASt4tV2E8fbn9tc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxp0ZClPV6EjNt18zha_DeYY.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxhvwU2jSZ_W3bMnLe__5hmc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxlG2YASMDG4K4_XuakzasE8.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxqRhChYxGgJf4PX4Wvk4Rlk.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxo05NJhCxBV64hQBJiatqx0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxko2lTMeWA_kmIyWrkNCwPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBrWJ8El2VFcUWHOh_Oq6BA8.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBhLwxQbNcFnuWuPk3YnjToI.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBvDtiuuJNge4XCX2Yxjz0ug.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBnZwgMdXZ_smNJnor9b37uA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBlvp_UfalQ96C-39B62FvR4.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBkqs5AeeBmydKTXp2rSeyjU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBqg5eI2G47JWe0-AuFtD150.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxrLZkzWHE0Rai0z0KZwCYHE.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxqs1twL42OQU-XDphSlMXYM.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxh5CnfegDxvzrJzsS30I9Mo.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxuGaZ6kaGPxTsxBG85inVYY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxpGgvICTqEy5bPQVoK8tr-Y.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxk_OFHk8r5jZbncjCRw3fvE.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxqsA81DAeuqoeYxDcSOJPMY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxolIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}

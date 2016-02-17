@@ -1,8 +1,5 @@
 <?php
-$this->setPageTitle('Exam Comparison');
-$this->breadcrumbs = array(
-    'Exam Comparison',
-);
+$this->setPageTitle('Perbandingan Nilai Ujian');
 
 $modelUser = new User;
 $modelExam = new Exam;

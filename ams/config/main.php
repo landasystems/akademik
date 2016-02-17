@@ -4,12 +4,10 @@ Yii::setPathOfAlias('common', $root . DIRECTORY_SEPARATOR . 'common');
 
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'Academic Management Systems',
-    'theme' => 'themes',
+    'name' => 'Sistem Informasi Akademik',
     'preload' => array('log', 'bootstrap'),
     'import' => array(
         'application.models.*',
-        'application.models.acc.*',
         'common.components.*',
         'common.extensions.*',
         'common.extensions.image.helpers.*',
@@ -73,7 +71,7 @@ return array(
             'params' => array('directory' => '/opt/local/bin'),
         ),
         'themeManager' => array(
-            'basePath' => $root . 'common/',
+            'basePath' => $root . 'common/themes/',
         ),
         'cache' => array(
             'class' => 'system.caching.CFileCache'

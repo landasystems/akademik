@@ -1,8 +1,5 @@
 <?php
-$this->setPageTitle('Document Categories');
-$this->breadcrumbs = array(
-    'Document Categories',
-);
+$this->setPageTitle('Dokumen Folder');
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -28,11 +25,8 @@ $this->beginWidget('zii.widgets.CPortlet', array(
 $this->widget('bootstrap.widgets.TbMenu', array(
     'type' => 'pills',
     'items' => array(
-//        array('visible' => landa()->checkAccess('Download', 'c'), 'label' => 'Tambah', 'icon' => 'icon-plus', 'url' => Yii::app()->controller->createUrl('create'), 'linkOptions' => array()),
         array('label' => 'Daftar', 'icon' => 'icon-th-list', 'url' => Yii::app()->controller->createUrl('index'), 'active' => true, 'linkOptions' => array()),
         array('label' => 'Pencarian', 'icon' => 'icon-search', 'url' => '#', 'linkOptions' => array('class' => 'search-button')),
-        array('label' => 'Export ke PDF', 'icon' => 'icon-download', 'url' => Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions' => array('target' => '_blank'), 'visible' => true),
-        array('label' => 'Export ke Excel', 'icon' => 'icon-download', 'url' => Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions' => array('target' => '_blank'), 'visible' => true),
     ),
 ));
 $this->endWidget();
@@ -67,7 +61,6 @@ $this->widget('bootstrap.widgets.TbGridView', array(
     'type' => 'striped bordered condensed',
     'template' => '{summary}{pager}{items}{pager}',
     'columns' => array(
-        'id',
         array(
             'class' => 'CLinkColumn',
             'labelExpression' => '$data->nestedname',
@@ -75,14 +68,6 @@ $this->widget('bootstrap.widgets.TbGridView', array(
             'header' => 'Category Name',
             'htmlOptions' => array('style' => 'text-align: left;')
         ),
-        //'level',
-        //'lft',
-        //'rgt',
-        /*
-          'root',
-          'path',
-          'parent_id',
-         */
         array(
             'class' => 'bootstrap.widgets.TbButtonColumn',
             'template' => $buton,

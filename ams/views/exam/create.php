@@ -1,9 +1,5 @@
 <?php
-$this->setPageTitle('Tambah Exams');
-$this->breadcrumbs=array(
-	'Exams'=>array('index'),
-	'Create',
-);
+$this->setPageTitle('Tambah Soal Ujian');
 
 ?>
 

@@ -1,9 +1,6 @@
 <?php
 $this->setPageTitle('Add Document Categories');
-$this->breadcrumbs=array(
-	'Download Categories'=>array('index'),
-	'Create',
-);
+
 
 ?>
 

@@ -1,10 +1,5 @@
 <?php
 $this->setPageTitle('Tambah Absents');
-$this->breadcrumbs=array(
-	'Absents'=>array('index'),
-	'Create',
-);
-
 ?>
 
 <?php 

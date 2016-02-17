@@ -1,10 +1,6 @@
 <?php
-$this->setPageTitle('Edit Downloads | ID : '. $model->id);
-$this->breadcrumbs=array(
-	'Downloads'=>array('index'),
-	$model->name=>array('view','id'=>$model->id),
-	'Update',
-);
+$this->setPageTitle('Edit Dokumen | ID : '. $model->id);
+
 
 ?>
 

@@ -1,8 +1,5 @@
 <?php
-$this->setPageTitle('Site Config Holidays');
-$this->breadcrumbs=array(
-	'Site Config Holidays',
-);
+$this->setPageTitle('Setting Hari Libur');
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -31,8 +28,6 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 		array('label'=>'Tambah', 'icon'=>'icon-plus', 'url'=>Yii::app()->controller->createUrl('create'), 'linkOptions'=>array()),
                 array('label'=>'Daftar', 'icon'=>'icon-th-list', 'url'=>Yii::app()->controller->createUrl('index'),'active'=>true, 'linkOptions'=>array()),
 		array('label'=>'Pencarian', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button')),
-		array('label'=>'Export ke PDF', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GeneratePdf'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
-		array('label'=>'Export ke Excel', 'icon'=>'icon-download', 'url'=>Yii::app()->controller->createUrl('GenerateExcel'), 'linkOptions'=>array('target'=>'_blank'), 'visible'=>true),
 	),
 ));
 $this->endWidget();
@@ -53,18 +48,11 @@ $this->endWidget();
         'type'=>'striped bordered condensed',
         'template'=>'{summary}{pager}{items}{pager}',
 	'columns'=>array(
-		'id',
 		'date_holiday',
        array(
             'class'=>'bootstrap.widgets.TbButtonColumn',
 			'template' => '{view} {update} {delete}',
 			'buttons' => array(
-			      'view' => array(
-					'label'=> 'Lihat',
-					'options'=>array(
-						'class'=>'btn btn-small view'
-					)
-				),	
                               'update' => array(
 					'label'=> 'Edit',
 					'options'=>array(

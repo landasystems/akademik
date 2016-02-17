@@ -1,21 +1,5 @@
 <?php
 $this->setPageTitle('Site Configs');
-$this->breadcrumbs=array(
-	'Site Configs',
-);
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-    $('.search-form').slideToggle('fast');
-    return false;
-});
-$('.search-form form').submit(function(){
-    $.fn.yiiGridView.update('site-config-grid', {
-        data: $(this).serialize()
-    });
-    return false;
-});
-");
 
 ?>
 
@@ -37,14 +21,6 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 )); 
 $this->endWidget();
 ?>
-
-
-
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
 
 
 <?php $this->widget('bootstrap.widgets.TbGridView',array(

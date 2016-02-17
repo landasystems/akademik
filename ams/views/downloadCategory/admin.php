@@ -1,8 +1,4 @@
 <?php
-$this->breadcrumbs=array(
-	'Download Categories'=>array('index'),
-	'Manage',
-);
 
 $this->menu=array(
 	array('label'=>'List DownloadCategory','url'=>array('index')),

@@ -1,11 +1,5 @@
 <div class="form">
     <?php
-    $siteConfig = SiteConfig::model()->listSiteConfig();
-    $arr = json_decode($siteConfig->roles_student, true);
-    foreach ($arr as $val) {
-        $roles_student[] = $val;
-    }
-
     $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
         'id' => 'User-form',
         'enableAjaxValidation' => false,
@@ -24,11 +18,13 @@
         <?php echo $form->errorSummary($model, 'Opps!!!', null, array('class' => 'alert alert-error span12')); ?>
         <div class="clearfix"></div>
 
-        <?php // if (user()->checkAccess('User.*')) { ?>
+        <?php // if (user()->checkAccess('User.*')) {  ?>
         <div class="box">
             <div class="title">
                 <h4>
                     <?php
+                    $listakses = ($_GET['type']=='student') ? array(2 => 'Murid') : array(1 => 'Guru', 2 => 'Murid');                   
+                    
                     echo 'Hak Akses Sebagai<span class="required">*</span> :    ';
                     if ($model->id == User()->id) { //if same id, cannot change role it self
                         $listRoles = Roles::model()->listRoles();
@@ -38,41 +34,32 @@
                             echo $listRoles[User()->roles_id]['name'];
                         }
                     } else {
-                        echo CHtml::dropDownList('User[roles_id]', $model->roles_id, CHtml::listData(Roles::model()->listRoles(), 'id', 'name'), array(
-                            'empty' => t('choose', 'global'),
+                        echo CHtml::dropDownList('User[roles_id]', $model->roles_id, $listakses, array(
                             'ajax' => array('url' => url('user/AllowLogin'),
                                 'type' => 'POST',
-                                'success' => 'function(data){
-                                            if (data=="0")
-                                                $(".notAllow").fadeOut();
-                                            else
-                                                $(".notAllow").fadeIn();                                                                                        
-                                        }'),
+                            ),
                         ));
                     }
                     ?>                     
                 </h4>
             </div>
         </div>
-        <?php // } ?>
+        <?php // }  ?>
         <ul class="nav nav-tabs" id="myTab">
-            <li class="active"><a href="#personal">Personal</a></li>
-            <li><a href="#public">Public</a></li>
-            <?php if (!in_array(user()->roles_id, $roles_student)) { ?>
-                <li><a href="#parent">Parent Info</a></li>
-            <?php } ?>
-                <?php if (!($model->isNewRecord)) { ?><li><a href="#document">My Document</a></li><?php } ?>
-            <?php if (!($model->isNewRecord)) { ?><li><a href="#result">Result</a></li><?php } ?>
-            <?php if (!($model->isNewRecord)) { ?><li><a href="#exam">Exam</a></li><?php } ?>
+            <li class="active"><a href="#personal">Info Login</a></li>
+            <li><a href="#public">Info Diri</a></li>
+            <li><a href="#parent">Info Orang Tua</a></li>
+            <?php if (!($model->isNewRecord)) { ?><li><a href="#document">Dokumen</a></li><?php } ?>
+            <?php if (!($model->isNewRecord)) { ?><li><a href="#result">Riwayat Ujian</a></li><?php } ?>
+            <?php if (!($model->isNewRecord)) { ?><li><a href="#exam">List Soal</a></li><?php } ?>
         </ul>
 
         <div class="tab-content">
             <div class="tab-pane active" id="personal">
                 <table>
                     <tr>
-                        <?php if (!in_array(user()->roles_id, $roles_student)) { ?>
-                            <td width="300">
-                                <?php
+                        <td width="300">
+                            <?php
 //                            $accessSaldo = in_array('saldo', param('menu'));
 //                          $imgs = '';
                             $cc = '';
@@ -96,37 +83,18 @@
                             echo '<img src="' . $img['medium'] . '" alt="" class="image img-polaroid" id="my_image"  /> ';
                             echo $cc;
                             ?>
-                                
-                                <br><br><div> <?php echo $form->fileFieldRow($model, 'avatar_img', array('class' => 'span3', 'label' => false)); ?></div>
-                            </td>
-                        <?php } ?>
+
+                            <br><br><div> <?php echo $form->fileFieldRow($model, 'avatar_img', array('class' => 'span3', 'label' => false)); ?></div>
+                        </td>
+
                         <td style="vertical-align: top;">
-                            <div class="notAllow" style="display: <?php
-                            if ($model->scenario == 'notAllow')
-                                echo 'none';
-                            else
-                                echo '';
-                            ?>">
-
-                                <?php if (!in_array(user()->roles_id, $roles_student)) { ?>
-                                    <?php echo $form->textFieldRow($model, 'username', array('class' => 'span5', 'maxlength' => 20)); ?>
-
-                                    <?php echo $form->textFieldRow($model, 'email', array('class' => 'span5', 'maxlength' => 100)); ?>
-                                <?php } ?>
-
-                                <?php echo $form->passwordFieldRow($model, 'password', array('class' => 'span3', 'maxlength' => 255, 'hint' => 'Fill the password, to change',)); ?>
-                            </div>
-
-                            <?php if (!in_array(user()->roles_id, $roles_student)) { ?>
-                                <?php echo $form->toggleButtonRow($model, 'enabled'); ?> 
-                                <?php echo $form->textFieldRow($model, 'code', array('class' => 'span5', 'maxlength' => 25)); ?>
-                                <?php echo $form->textFieldRow($model, 'name', array('class' => 'span5', 'maxlength' => 255)); ?> 
-                            <?php } ?>
-                            <?php
-                            echo $form->textAreaRow(
-                                    $model, 'description', array('class' => 'span4', 'rows' => 5)
-                            );
-                            ?>
+                            <?php echo $form->textFieldRow($model, 'username', array('class' => 'span5', 'maxlength' => 20)); ?>
+                            <?php echo $form->textFieldRow($model, 'email', array('class' => 'span5', 'maxlength' => 100)); ?>
+                            <?php echo $form->passwordFieldRow($model, 'password', array('class' => 'span3', 'maxlength' => 255, 'hint' => 'Fill the password, to change',)); ?>
+                            <?php echo $form->toggleButtonRow($model, 'enabled'); ?> 
+                            <?php echo $form->textFieldRow($model, 'code', array('class' => 'span5', 'maxlength' => 25)); ?>
+                            <?php echo $form->textFieldRow($model, 'name', array('class' => 'span5', 'maxlength' => 255)); ?> 
+                            
                         </td>
 
                     </tr>
@@ -164,7 +132,7 @@
                 );
                 ?>
             </div>  
-            <?php if (!in_array(user()->roles_id, $roles_student)) { ?>
+            <?php if (user()->roles_id == 2) { ?>
                 <div class="tab-pane" id="parent">
                     <?php
                     if ($model->isNewRecord == false) {
@@ -224,9 +192,9 @@
                             ),
                             'created',
                             array(
-                                'value' => '"<a href=\"$data->urlFull\" class=\"btn btn-small cut-icon-download\"></a>"',
+                                'value' => '"<a href=\"$data->urlFull\" class=\"btn btn-small icon-download\"></a>"',
                                 'type' => 'raw',
-                                'htmlOptions' => array('style' => 'width: 20px;'),
+                                'htmlOptions' => array('style' => 'width: 35px;'),
                             ),
                             array(
                                 'class' => 'CLinkColumn',

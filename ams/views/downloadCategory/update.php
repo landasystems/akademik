@@ -1,10 +1,6 @@
 <?php
-$this->setPageTitle('Edit Download Categories | ID : '. $model->id);
-$this->breadcrumbs=array(
-	'Download Categories'=>array('index'),
-	$model->name=>array('view','id'=>$model->id),
-	'Update',
-);
+$this->setPageTitle('Edit Dokumen Kategori');
+
 
 ?>
 

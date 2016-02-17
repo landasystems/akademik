@@ -91,8 +91,7 @@
             </div>
         </div>
         <div class="well">
-            <h4>Keterangan</h4>
-            <?php echo $form->textFieldRow($model, 'name', array('class' => 'span3', 'maxlength' => 255)); ?>
+            <h4>Atur Jadwal Ujian</h4>
 
         <?php
         echo $form->datepickerRow(
@@ -131,22 +130,6 @@
 
         <?php echo $form->textFieldRow($model, 'exam_total', array('class' => 'span1', 'readonly' => 'readonly')); ?>
         <?php echo $form->textFieldRow($model, 'result_max', array('class' => 'span1', 'hint' => 'Score maksimal untuk hasil ujian', 'maxlength' => 3)); ?>
-
-        <?php /* echo $form->textFieldRow($model,'created',array('class'=>'span5')); ?>
-
-          <?php echo $form->textFieldRow($model,'created_user_id',array('class'=>'span5')); ?>
-
-          <?php echo $form->textFieldRow($model,'modified',array('class'=>'span5')); */ ?>
-        <?php
-        echo $form->html5EditorRow(
-                $model, 'description', array(
-            'class' => 'span2',
-            'rows' => 5,
-            'height' => '200',
-            'options' => array('color' => true)
-                )
-        );
-        ?>
         </div>
         
 

@@ -118,7 +118,7 @@ $id = $_GET['id'];
     <tbody>
     
         <?php
-        $category = mysql_query("select * from acca_download_category where id=$id");
+        $category = mysql_query("select * from download_category where id=$id");
 		$row = mysql_fetch_array($category);
 		$cat=  $row['name'];
                 $path = $row['path'];

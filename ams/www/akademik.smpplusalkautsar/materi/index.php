@@ -102,7 +102,7 @@ th {
   </tr>
     <?php
 	$no=0;
-  $sql_tampil = mysql_query("SELECT  * from acca_download, acca_download_category where acca_download.download_category_id=acca_download_category.id order by acca_download.id desc limit 7");
+  $sql_tampil = mysql_query("SELECT  * from download, download_category where download.download_category_id=download_category.id order by download.id desc limit 7");
 	  while ($row = mysql_fetch_array($sql_tampil)){
 	  $no++;
             echo ' <tr>

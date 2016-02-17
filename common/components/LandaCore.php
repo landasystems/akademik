@@ -49,7 +49,7 @@ class LandaCore extends CApplicationComponent {
         if (file_exists($big))
             unlink($big);
 
-        //Yii::log('images/' . $path . $id . '-700x700-' . $newFileName, 'info');
+        Yii::log('images/' . $path . $id . '-700x700-' . $newFileName, 'info');
         $image = new Image(param('pathImg') . $path . $filename);
         $image->smart_resize(150, 150, $crop);
         $image->save($small);

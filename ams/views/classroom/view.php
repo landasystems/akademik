@@ -1,9 +1,6 @@
 <?php
-$this->setPageTitle('Lihat Classrooms | ID : ' . $model->id);
-$this->breadcrumbs = array(
-    'Classrooms' => array('index'),
-    $model->name,
-);
+$this->setPageTitle('Lihat Kelas | ID : ' . $model->id);
+
 ?>
 
 <?php
@@ -22,10 +19,7 @@ $this->widget('bootstrap.widgets.TbMenu', array(
         array('label' => 'Print', 'icon' => 'icon-print', 'url' => 'javascript:void(0);return false', 'linkOptions' => array('onclick' => 'printDiv();return false;')),
 )));
 $this->endWidget();
-$this->breadcrumbs = array(
-    'Classrooms' => array('index'),
-    $model->name,
-);
+
 ?>
 <div class='printableArea'>
     <?php

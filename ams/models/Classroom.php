@@ -92,8 +92,8 @@ class Classroom extends CActiveRecord {
     public function getHaventClass() {
         $results = cmd()
                 ->select('id, name')
-                ->from('acca_user')
-                ->where('id NOT IN (SELECT user_id FROM acca_user_classroom)')
+                ->from('user')
+                ->where('id NOT IN (SELECT user_id FROM user_classroom)')
                 ->queryAll();
         return $results;
     }

@@ -1,9 +1,6 @@
 <?php
-$this->setPageTitle('Lihat Downloads | ID : '. $model->id);
-$this->breadcrumbs=array(
-	'Downloads'=>array('index'),
-	$model->name,
-);
+$this->setPageTitle('Lihat Dokumen');
+
 ?>
 
 <?php 
@@ -19,7 +16,7 @@ $this->widget('bootstrap.widgets.TbMenu', array(
                 array('label'=>'Daftar', 'icon'=>'icon-th-list', 'url'=>Yii::app()->controller->createUrl('index'), 'linkOptions'=>array()),
                 array('label'=>'Edit', 'icon'=>'icon-edit', 'url'=>Yii::app()->controller->createUrl('update',array('id'=>$model->id)), 'linkOptions'=>array()),
 		//array('label'=>'Pencarian', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button')),
-		array('label'=>'Print', 'icon'=>'icon-print', 'url'=>'javascript:void(0);return false', 'linkOptions'=>array('onclick'=>'printDiv();return false;')),
+		
 
 )));
 $this->endWidget();

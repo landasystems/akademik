@@ -1,9 +1,5 @@
 <?php
-$this->setPageTitle('Lihat Exams | ID : ' . $model->id);
-$this->breadcrumbs = array(
-    'Exams' => array('index'),
-    $model->name,
-);
+$this->setPageTitle('Lihat Soal');
 ?>
 
 <?php
@@ -18,8 +14,6 @@ $this->widget('bootstrap.widgets.TbMenu', array(
         array('label' => 'Tambah', 'icon' => 'icon-plus', 'url' => Yii::app()->controller->createUrl('create'), 'linkOptions' => array(), 'visible' => landa()->checkAccess('Exam', 'c')),
         array('label' => 'Daftar', 'icon' => 'icon-th-list', 'url' => Yii::app()->controller->createUrl('index'), 'linkOptions' => array()),
         array('label' => 'Edit', 'icon' => 'icon-edit', 'url' => Yii::app()->controller->createUrl('update', array('id' => $model->id)), 'linkOptions' => array(), 'visible' => landa()->checkAccess('Exam', 'u')),
-        //array('label'=>'Pencarian', 'icon'=>'icon-search', 'url'=>'#', 'linkOptions'=>array('class'=>'search-button')),
-        array('label' => 'Print', 'icon' => 'icon-print', 'url' => 'javascript:void(0);return false', 'linkOptions' => array('onclick' => 'printDiv();return false;')),
 )));
 $this->endWidget();
 ?>

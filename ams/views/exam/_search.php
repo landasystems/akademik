@@ -15,26 +15,6 @@
     <div class="span3"></div>
 </div>
 
-        <?php //echo $form->textFieldRow($model,'id',array('class'=>'span5')); ?>
-
-        
-
-        
-
-        <?php /*echo $form->textFieldRow($model,'description',array('class'=>'span5','maxlength'=>255)); ?>
-
-        <?php echo $form->textFieldRow($model,'period',array('class'=>'span5')); ?>
-
-        <?php echo $form->textFieldRow($model,'public',array('class'=>'span5')); ?>
-
-        <?php echo $form->textFieldRow($model,'key',array('class'=>'span5')); ?>
-
-        <?php echo $form->textFieldRow($model,'created',array('class'=>'span5')); ?>
-
-        <?php echo $form->textFieldRow($model,'created_user_id',array('class'=>'span5')); ?>
-
-        <?php echo $form->textFieldRow($model,'modified',array('class'=>'span5'));*/ ?>
-
 <div class="form-actions">
     <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'icon'=>'search white', 'label'=>'Pencarian')); ?>
     <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'button', 'icon'=>'icon-remove-sign white', 'label'=>'Reset', 'htmlOptions'=>array('class'=>'btnreset btn-small'))); ?>
