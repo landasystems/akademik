@@ -5,11 +5,11 @@ defined('YII_DEBUG') or define('YII_DEBUG',true);
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
 // change the following paths if necessary
-require_once(dirname(__FILE__).'/../../../common/config/absensi.smpplusalkautsar.php'); // change this line for configuration
-require_once(dirname(__FILE__).'/../../../common/globals.php');
-require_once(dirname(__FILE__).'/../../../common/lib/yii/yii.php');
+require_once(dirname(__FILE__).'/../ams/config/absensi.smpplusalkautsar.php'); // change this line for configuration
+require_once(dirname(__FILE__).'/../ams/globals.php');
+require_once(dirname(__FILE__).'/../ams/lib/yii/yii.php');
 
-$config_app=require(dirname(__FILE__).'/../../config/main.php'); // change this line for configuration
+$config_app=require(dirname(__FILE__).'/../ams/config/main.php'); // change this line for configuration
 $config_index = array('theme' => 'abs'); // change this line for configuration
 $config = CMap::mergeArray($config_index, $config_app);
 

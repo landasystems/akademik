@@ -919,7 +919,7 @@ ul.icons li [class*=" icon-"] {
 
 	#page .sections .wrap,#page #header .wrap, #page #footer .wrap, #page .sections .content {width:940px}
 	#header ul li{margin:0 0 0 15px;font-size:16px;}
-	#page .project-box, .page-template-default #page .section-1, .page-template-pt-work-php #page .no-proj.section-1 {min-height:140px!important;padding;206px 0 206px!important}
+	#page .project-box, .page-template-default #page .section-1, .page-template-pt-work-php #page .no-proj.section-1 {min-height:140px!important;padding:206px 0 206px!important}
 	#page .section-1.top-box {min-height:90px!important}
 
 	.home #page .section-1 {padding-top:224px}

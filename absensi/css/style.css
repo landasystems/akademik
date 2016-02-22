@@ -1,0 +1,489 @@
+/* 
+    Document   : style
+    Created on : Mar 24, 2014, 11:50:29 AM
+    Author     : TressTerra
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body{
+    background: url("../images/patterns/4.png");
+}
+body.loginPage {
+    background-image: url(../images/login-background.jpg) ;
+    /*background: #F3FF0B;*/
+    background-size:1400px;
+
+}
+#header{
+    height: 80px; 
+    padding:10px;
+    padding-top: 10px;
+    padding-left: 7%;
+    background-clip: border-box;
+    background-image: -moz-linear-gradient(bottom right, #FFFFFF 0%, #52a6ef 100%);
+    background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #52a6ef));
+    -webkit-box-shadow: 0px 10px 20px -8px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 10px 20px -8px rgba(0,0,0,0.29);
+    /* IE10+ */ 
+background-image: -ms-linear-gradient(bottom right, #1e5799 0%, #2989D8 50%, #207CCA 51%, #7db9e8 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom right, #1e5799 0%, #2989D8 50%, #207CCA 51%, #7db9e8 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom right, #1e5799 0%, #2989D8 50%, #207CCA 51%, #7db9e8 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #1e5799), color-stop(50, #2989D8), color-stop(51, #207CCA), color-stop(100, #7db9e8));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom right, #1e5799 0%, #2989D8 50%, #207CCA 51%, #7db9e8 100%);
+
+/* W3C Markup */ 
+background-image: linear-gradient(to top left, #1e5799 0%, #2989D8 50%, #207CCA 51%, #7db9e8 100%);
+}
+#left{
+    background-color: #FFFFFF;
+    background-clip: padding-box;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-radius: 8px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #d5d5d5;
+    -webkit-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    -moz-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+}
+#right{
+    background-color: #FFFFFF;
+    background-clip: padding-box;
+
+    padding: 10px;
+    border-radius: 8px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #d5d5d5;
+    -webkit-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    -moz-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+}
+#time{
+    background-color: #207CCA;
+    -webkit-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    -moz-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-variant: normal;
+    
+    color: #FFFFFF;
+}
+#masuk{
+        background-color: #40b66d;
+    -webkit-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    -moz-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-variant: normal;
+    
+    color: #FFFFFF;
+}
+#pulang{
+        background-color: #f62c2c;
+    -webkit-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    -moz-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-variant: normal;
+    
+    color: #FFFFFF;
+}
+
+#selesai{
+        background-color: #fff000;
+    -webkit-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    -moz-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-variant: normal;
+    
+    color: #1b1b1b;
+}
+
+#eror{
+ background-color: #207CCA;
+    -webkit-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    -moz-box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    box-shadow: 7px 12px 20px -8px rgba(0,0,0,0.29);
+    border-radius: 8px;
+    padding: 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-variant: normal;
+    color: #FFFFFF;  
+    margin-top: 5%;
+    float: none;
+ font-family: Garamond, serif;
+line-height: 1em;
+color: #ffffff;
+font-size: 77px;
+text-shadow:0px 0px 0 rgb(184,184,184),1px 1px 0 rgb(140,140,140), 2px 2px 0 rgb(97,97,97),3px 3px 2px rgba(0,0,0,0.5),3px 3px 1px rgba(0,0,0,0.5),0px 0px 2px rgba(0,0,0,.2);}
+
+.title{
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-left: 2%;
+}
+
+.control-label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333333;
+}
+.img-polaroid{
+    border-radius: 8px;    
+}
+
+
+/* === Form =========================================== */
+#login-form {
+    width: 100%;
+}
+
+#login-form .field {
+    position: relative;
+    margin: 0 50px;
+}
+
+#login-form .field i {
+    font-size: 14px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    color: #f7f3eb;
+    background: #676056;
+    text-align: center;
+    line-height: 44px;
+    transition: all 0.3s ease-out;
+    pointer-events: none;
+}
+
+/* === Logo === */
+.logo {
+    background-image: url(../images/favicon.png);
+    /*background: url(../images/patterns/2.png) repeat;*/
+    background-size:105px;
+    background-position: center;
+    height: 85px;
+    width: 120px;
+    margin: 100px auto 30px auto;
+}
+
+/* === Login === */
+.login {
+    position: relative;
+    margin: 0 auto;
+    width: 370px;
+    height: 315px;
+    background: white;
+    border-radius: 3px;
+}
+
+.login:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.login h1 {
+    line-height: 55px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background: #049A09;
+
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.login p:first-child {
+    margin-top: 30px;
+}
+
+.login p.remember {
+    float: left;
+}
+
+.login p.remember label {
+    color: #a7a599;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.login p.submit {
+    text-align: center;
+}
+
+.login p.forgot {
+    float: right;
+    margin-right: 50px;
+}
+
+.login p.forgot a {
+    color: #a7a599;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    transition: all 0.3s ease-out;
+}
+
+.login p.forgot a:hover {
+    color: #049A09;
+}
+
+/* === Input Form === */
+::-webkit-input-placeholder {
+    color: #B4B0A9;
+    font-family:'Open Sans';
+}
+
+:-moz-placeholder {
+    color: #B4B0A9 !important;
+    font-family:'Open Sans';
+}
+
+#login-form input[type=text],
+#login-form input[type=password] {
+    font-family: 'Open Sans', Calibri, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 15px 10px 55px;
+    position: relative;
+    width: 200px;
+    color: #000000;
+    border: none;
+    background: #f7f3eb;
+    color: #777;
+    transition: color 0.3s ease-out;
+}
+
+#login-form input[type=text] {
+    margin-bottom: 15px;
+}
+
+#login-form input[type=text]:hover ~ i,
+#login-form input[type=password]:hover ~ i {
+    color: #ded9cf;
+}
+
+#login-form input[type=text]:focus ~ i,
+#login-form input[type=password]:focus ~ i {
+    color: #049A09;
+}
+
+#login-form input[type=text]:focus,
+#login-form input[type=password]:focus,
+#login-form button[type=submit]:focus {
+    outline: none;
+}
+
+#login-form .btn {
+    margin-top: 15px;
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+    padding: 12px 0;
+    letter-spacing: 0;
+
+    -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+
+    color: #fff;
+    background-color: #049A09;
+    text-shadow: none;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-animation: shadowFadeOut 0.4s;
+    -moz-animation: shadowFadeOut 0.4s;
+}
+
+#login-form input[type=submit]:hover,input[type=submit]:focus{
+    color: #fff;
+    -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+    -webkit-animation: shadowFade 0.4s;
+    -moz-animation: shadowFade 0.4s;
+}
+
+@keyframes shadowFade {
+    0% {
+    -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+100% {
+    -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+}
+
+@keyframes shadowFadeOut {
+    0% {
+    -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+100% {
+    -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+}
+
+@-webkit-keyframes shadowFade {
+    0% {
+    -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+100% {
+    -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+}
+
+@-webkit-keyframes shadowFadeOut {
+    0% {
+    -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+100% {
+    -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+}
+
+@-moz-keyframes shadowFade {
+    0% {
+    -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+100% {
+    -webkit-box-shadow: inset 0px 46px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 46px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 46px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+}
+
+@-moz-keyframes shadowFadeOut {
+    0% {
+    -webkit-box-shadow: inset 0px 44px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 44px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 44px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+100% {
+    -webkit-box-shadow: inset 0px 0px 0px 0px rgba(204,86,15,1);
+    -moz-box-shadow:    inset 0px 0px 0px 0px rgba(204,86,15,1);
+    box-shadow:         inset 0px 0px 0px 0px rgba(204,86,15,1);
+    color: #fff;
+}
+}
+
+#login-form input[type="checkbox"] {
+    display:none;
+}
+
+#login-form input[type="checkbox"] + label span {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    margin: -2px 4px 0 50px;
+    vertical-align:middle;
+    background:url("image/checkbox.png") left top no-repeat;
+    cursor:pointer;
+}
+#login-form input[type="checkbox"]:checked + label span {
+    background:url("image/checkbox.png") -16px top no-repeat;
+}
+
+/* === Copyright === */
+.copyright {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.copyright p, a {
+    color: #828078;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+.copyright a:hover {
+    color: #f2672e;
+}
+

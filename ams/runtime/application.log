@@ -2834,3 +2834,109 @@ Stack trace:
 REQUEST_URI=/akademik/ujian/img/350x350-noimage.jpg
 HTTP_REFERER=http://localhost/akademik/ujian/test/finish/465.html
 ---
+2016/02/20 08:34:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/
+---
+2016/02/20 08:36:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ams/www/akademik.smpplusalkautsar".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ams/www/akademi...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ams/www/akademik.smpplusalkautsar/
+---
+2016/02/20 08:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/20 08:37:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/20 09:05:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/20 09:25:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/absensi/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/absensi/css/style.css
+HTTP_REFERER=http://localhost/akademik/absensi/site/login.html
+---
+2016/02/20 09:25:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/icons.css".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('css/icons.css')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/absensi/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/absensi/css/icons.css
+HTTP_REFERER=http://localhost/akademik/absensi/site/login.html
+---
+2016/02/20 09:25:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.png".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/favicon....')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/absensi/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/absensi/images/favicon.png
+HTTP_REFERER=http://localhost/akademik/absensi/css/style.css
+---
+2016/02/20 09:25:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/image/checkbox.png".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('css/image/check...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/absensi/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/absensi/css/image/checkbox.png
+HTTP_REFERER=http://localhost/akademik/absensi/css/style.css
+---
+2016/02/20 09:26:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.png".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/favicon....')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/absensi/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/absensi/images/favicon.png
+HTTP_REFERER=http://localhost/akademik/absensi/css/style.css
+---
+2016/02/20 09:26:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.png".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/favicon....')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/absensi/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/absensi/images/favicon.png
+HTTP_REFERER=http://localhost/akademik/absensi/css/style.css
+---
+2016/02/20 09:27:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.png".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/favicon....')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/absensi/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/absensi/images/favicon.png
+HTTP_REFERER=http://localhost/akademik/absensi/css/style.css
+---
