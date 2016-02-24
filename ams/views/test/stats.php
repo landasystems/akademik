@@ -29,7 +29,7 @@ $this->breadcrumbs = array(
         <tr>
             <td class="span3"><b>Kategori Ujian</b></td>
             <td style="width: 10px">:</td>
-            <td><?php echo $model->Exam->ExamCategory->name ?></td>
+            <td><?php echo (isset($model->Exam->ExamCategory->name)) ? $model->Exam->ExamCategory->name : ''?></td>
 
             <td class="span3"><b>Waktu</b></td>
             <td style="width: 10px">:</td>

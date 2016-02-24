@@ -3056,3 +3056,239 @@ Stack trace:
 REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
 HTTP_REFERER=http://localhost/akademik/style.css
 ---
+2016/02/24 09:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "materi34".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('materi34')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/materi34.html
+---
+2016/02/24 09:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "materi/download-34".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('materi/download...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/materi/download-34.html
+---
+2016/02/24 09:54:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "materi/download-34".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('materi/download...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/materi/download-34.html
+---
+2016/02/24 11:42:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "materi-download/34".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('materi-download...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/materi-download/34.html
+---
+2016/02/24 11:42:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "materi-download/34".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('materi-download...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/materi-download/34.html
+---
+2016/02/24 13:53:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/24 14:42:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "kelas-7".' in /var/www/akademik/ams/lib/yii/web/CController.php:483
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CController.php(270): CController->missingAction('kelas-7')
+#1 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('kelas-7')
+#2 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('download/kelas-...')
+#3 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/akademik/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/akademik/download/kelas-7/alquran-dan-terjemahannya/12743939_10207222161065620_5729818111502630729_n.jpg
+HTTP_REFERER=http://localhost/akademik/materi/unduh/34.html
+---
+2016/02/24 14:51:28 [error] ['images/download/kelas-7/alquran-dan-terjemahannya//12743939_10207222161065620_5729818111502630729_n.jpg'] Landa Var Dump
+in /var/www/akademik/ams/globals.php (6)
+in /var/www/akademik/ams/controllers/DownloadController.php (77)
+in /var/www/akademik/index.php (17)
+2016/02/24 14:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/366-150x150-ahmad-adib-efendi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/366-150x150-ahmad-adib-efendi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/24 14:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/355-150x150-probohayu-pertiwi.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/3...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/355-150x150-probohayu-pertiwi.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/24 14:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatar/253-150x150-dian-aryati-nugraheni.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/avatar/2...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/avatar/253-150x150-dian-aryati-nugraheni.jpg
+HTTP_REFERER=http://localhost/akademik/user.html
+---
+2016/02/24 15:25:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/24 15:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/24 15:45:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/24 15:45:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/24 15:49:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/24 15:50:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/24 15:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/24 16:13:40 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.roles" is not defined.' in /var/www/akademik/ams/lib/yii/base/CComponent.php:130
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/auth/CWebUser.php(146): CComponent->__get('roles')
+#1 /var/www/akademik/ams/models/Auth.php(135): CWebUser->__get('roles')
+#2 /var/www/akademik/ams/themes/spr/views/layouts/main.php(78): Auth->modules()
+#3 /var/www/akademik/ams/lib/yii/web/CBaseController.php(126): require('/var/www/akadem...')
+#4 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/akadem...', Array, true)
+#5 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(SchoolYearController), '/var/www/akadem...', Array, true)
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(784): CBaseController->renderFile('/var/www/akadem...', Array, true)
+#7 /var/www/akademik/ams/controllers/SchoolYearController.php(125): CController->render('index', Array)
+#8 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): SchoolYearController->actionIndex()
+#9 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('schoolYear/inde...')
+#14 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/akademik/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/akademik/schoolYear/index.html
+HTTP_REFERER=http://localhost/akademik/schoolYear/update/9.html
+---
+2016/02/24 16:24:24 [error] [php] Trying to get property of non-object (/var/www/akademik/ams/views/test/stats.php:32)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(869): TestController->renderFile()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(782): TestController->renderPartial()
+#3 /var/www/akademik/ams/controllers/TestController.php(194): TestController->render()
+#4 /var/www/akademik/ams/controllers/TestController.php(19): TestController->actionStats()
+#5 unknown(0): TestController->actionView()
+#6 /var/www/akademik/ams/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#7 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#11 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#12 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/test/465.html
+in /var/www/akademik/ams/views/test/stats.php (32)
+in /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/akademik/ams/controllers/TestController.php (194)
+2016/02/24 16:25:15 [error] [php] Trying to get property of non-object (/var/www/akademik/ams/views/test/stats.php:32)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(869): TestController->renderFile()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(782): TestController->renderPartial()
+#3 /var/www/akademik/ams/controllers/TestController.php(194): TestController->render()
+#4 /var/www/akademik/ams/controllers/TestController.php(19): TestController->actionStats()
+#5 unknown(0): TestController->actionView()
+#6 /var/www/akademik/ams/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#7 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/akademik/ams/lib/yii/web/CController.php(286): TestController->runAction()
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(265): TestController->runActionWithFilters()
+#11 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): TestController->run()
+#12 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/test/466.html
+in /var/www/akademik/ams/views/test/stats.php (32)
+in /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php (40)
+in /var/www/akademik/ams/controllers/TestController.php (194)
+2016/02/24 16:27:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/24 16:28:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ujian/test/onGoing".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('ujian/test/onGo...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/ujian/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/ujian/ujian/test/onGoing.html
+HTTP_REFERER=http://localhost/akademik/ujian/site/login.html
+---

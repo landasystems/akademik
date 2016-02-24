@@ -2,8 +2,8 @@
 session_start();
 $server = "localhost";
 $username = "root";
-$password = "";
-$database = "certainty";
+$password = "landak";
+$database = "landa_ams_smpplusalkautsar";
  
 // Koneksi dan memilih database di server
 mysql_connect($server,$username,$password) or die("Koneksi gagal");

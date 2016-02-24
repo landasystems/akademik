@@ -108,33 +108,33 @@ class Auth extends CActiveRecord {
 
         return array(
             array('label' => 'Dashboard', 'url' => array('/dashboard')),
-            array('visible' => landa()->checkAccess('Download', 'r'), 'auth_id' => 'Download', 'label' => 'Dokumen', 'url' => array('/downloadCategory')),
-            array('visible' => landa()->checkAccess('Student', 'r') || landa()->checkAccess('SchoolYear', 'r') || landa()->checkAccess('Classroom', 'r') || landa()->checkAccess('UserClassroom', 'r'), 'label' => 'Akademik', 'url' => array('/User'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
-                    array('visible' => landa()->checkAccess('User', 'r'), 'auth_id' => 'User', 'label' => 'Guru', 'url' => array('/user'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('Student', 'r'), 'auth_id' => 'Student', 'label' => 'Murid', 'url' => url('user/student'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('SchoolYear', 'r'), 'auth_id' => 'SchoolYear', 'label' => 'Tahun Ajaran', 'url' => array('/schoolYear'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('Classroom', 'r'), 'auth_id' => 'Classroom', 'label' => 'Kelas', 'url' => array('/classroom'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('UserClassroom', 'r'), 'auth_id' => 'UserClassroom', 'label' => 'Penempatan Siswa', 'url' => array('/userClassroom'), 'crud' => array("r" => 1)),
+            array('label' => 'Dokumen', 'url' => array('/downloadCategory')),
+            array('visible' =>user()->roles_id == -1,'label' => 'Akademik', 'url' => array('/User'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
+                    array('auth_id' => 'User', 'label' => 'Guru', 'url' => array('/user'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'Student', 'label' => 'Murid', 'url' => url('user/student'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'SchoolYear', 'label' => 'Tahun Ajaran', 'url' => array('/schoolYear'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'Classroom', 'label' => 'Kelas', 'url' => array('/classroom'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'UserClassroom', 'label' => 'Penempatan Siswa', 'url' => array('/userClassroom'), 'crud' => array("r" => 1)),
                 )),
-            array('visible' => landa()->checkAccess('ExamCategory', 'r') || landa()->checkAccess('Exam', 'r') || landa()->checkAccess('Test', 'r') || landa()->checkAccess('TestResult', 'r'), 'label' => 'Ujian', 'url' => array('/User'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
-                    array('visible' => landa()->checkAccess('Exam', 'r'), 'auth_id' => 'Exam', 'label' => 'Soal', 'url' => array('/exam'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('Test', 'r'), 'auth_id' => 'Test', 'label' => 'Jadwal', 'url' => array('/test'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('TestResult', 'r'), 'auth_id' => 'TestResult', 'label' => 'Hasil Ujian', 'url' => array('/testResult'), 'crud' => array("r" => 1)),
+            array('label' => 'Ujian', 'url' => array('/User'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
+                    array('auth_id' => 'Exam', 'label' => 'Soal', 'url' => array('/exam'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'Test', 'label' => 'Jadwal', 'url' => array('/test'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'TestResult', 'label' => 'Hasil Ujian', 'url' => array('/testResult'), 'crud' => array("r" => 1)),
                 )),
-            array('visible' => landa()->checkAccess('Sms', 'r'), 'label' => 'SMS', 'url' => array('#'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
-                    array('visible' => landa()->checkAccess('smsKeyword', 'r'), 'auth_id' => 'smsKeyword', 'label' => 'Keyword', 'url' => url('/smsKeyword'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('outbox', 'r'), 'auth_id' => 'outbox', 'label' => 'Outbox', 'url' => url('/sms/outbox'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('Sms', 'r'), 'auth_id' => 'Sms', 'label' => 'Inbox & Sentitems', 'url' => url('/sms'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('logModem', 'r'), 'auth_id' => 'logModem', 'label' => 'Log Status Modem', 'url' => url('/sms/logModem'), 'crud' => array("r" => 1)),
+            array('visible' =>user()->roles_id == -1, 'label' => 'SMS', 'url' => array('#'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
+                    array('auth_id' => 'smsKeyword', 'label' => 'Keyword', 'url' => url('/smsKeyword'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'outbox', 'label' => 'Outbox', 'url' => url('/sms/outbox'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'Sms', 'label' => 'Inbox & Sentitems', 'url' => url('/sms'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'logModem', 'label' => 'Log Status Modem', 'url' => url('/sms/logModem'), 'crud' => array("r" => 1)),
                 )),
-            array('visible' => landa()->checkAccess('ReportMonth', 'r') || landa()->checkAccess('ReportDay', 'r'), 'label' => 'Absensi', 'url' => array('#'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
-                    array('visible' => landa()->checkAccess('Holiday', 'r'), 'auth_id' => 'Holiday', 'label' => 'Hari Libur', 'url' => url('/siteConfigHoliday'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('ReportMonth', 'r'), 'auth_id' => 'ReportMonth', 'label' => 'Rekap', 'url' => url('/ReportAbsent'), 'crud' => array("r" => 1)),
+            array('visible' =>user()->roles_id == -1, 'label' => 'Absensi', 'url' => array('#'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
+                    array('auth_id' => 'Holiday', 'label' => 'Hari Libur', 'url' => url('/siteConfigHoliday'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'ReportMonth', 'label' => 'Rekap', 'url' => url('/ReportAbsent'), 'crud' => array("r" => 1)),
                 )),
-            array('visible' => landa()->checkAccess('Report_Exam', 'r') || landa()->checkAccess('Report_Userlist', 'r'), 'label' => 'Laporan', 'url' => array('#'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
-                    array('visible' => landa()->checkAccess('Sms', 'r'), 'auth_id' => 'Customer', 'label' => 'Pesan Terkirim', 'url' => url('/report/sentItem'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('Report_Exam', 'r'), 'auth_id' => 'Report_Exam', 'label' => 'Nilai Ujian', 'url' => array('/report/examReport'), 'crud' => array("r" => 1)),
-                    array('visible' => landa()->checkAccess('Report_Day', 'r'), 'auth_id' => 'Report_Day', 'label' => 'Absensi Harian', 'url' => url('/ReportAbsent/ReportHarian'), 'crud' => array("r" => 1)),
+            array('label' => 'Laporan', 'url' => array('#'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
+                    array('visible' => user()->roles_id == -1, 'auth_id' => 'Customer', 'label' => 'Pesan Terkirim', 'url' => url('/report/sentItem'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'Report_Exam', 'label' => 'Nilai Ujian', 'url' => array('/report/examReport'), 'crud' => array("r" => 1)),
+                    array('auth_id' => 'Report_Day', 'label' => 'Absensi Harian', 'url' => url('/ReportAbsent/ReportHarian'), 'crud' => array("r" => 1)),
                 )),
         );
     }

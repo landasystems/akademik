@@ -48,7 +48,7 @@ $this->endWidget();
 $buton = '';
 
 if (landa()->checkAccess('Test', 'r'))
-    $buton .= '{statistic}{view}';
+    $buton .= '{view}';
 
 if (landa()->checkAccess('Test', 'u'))
     $buton .= '{update} ';
@@ -106,17 +106,17 @@ $this->widget('bootstrap.widgets.TbGridView', array(
             'class' => 'bootstrap.widgets.TbButtonColumn',
             'template' => $buton,
             'buttons' => array(
-                'statistic' => array(
+                'view' => array(
                     'options' => array(
                         'class' => 'btn btn-small  brocco-icon-stats'
                     )
                 ),
-                'view' => array(
-                    'label' => 'Lihat',
-                    'options' => array(
-                        'class' => 'btn btn-small view'
-                    )
-                ),
+//                'view' => array(
+//                    'label' => 'Lihat',
+//                    'options' => array(
+//                        'class' => 'btn btn-small view'
+//                    )
+//                ),
                 'update' => array(
                     'label' => 'Edit',
                     'options' => array(

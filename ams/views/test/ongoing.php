@@ -1,8 +1,5 @@
 <?php
-$this->setPageTitle('Exam Online Test');
-$this->breadcrumbs = array(
-    'Ongoing Examination',
-);
+$this->setPageTitle('Ujian yang sedang Berlangsung');
 ?>
 
 <?php
@@ -36,16 +33,7 @@ foreach ($model as $arr) {
 
                 <td><b>Waktu Mulai</b></td>
                 <td>:</td>
-                <td><?php echo $arr->date_test . ' , ' . $arr->time_start ?></td>
-            </tr>
-            <tr>
-                <td><b>Description</b></td>
-                <td>:</td>
-                <td><?php echo $arr->description ?></td>
-
-                <td><b>Waktu Selesai</b></td>
-                <td>:</td>
-                <td><?php echo $arr->date_test . ' , ' . $arr->time_end ?></td>
+                <td><?php echo date('d M Y', strtotime($arr->date_test)) . ', ' . $arr->time_start ?></td>
             </tr>
             <tr>    
                 <td><b>Jumlah Soal</b></td>

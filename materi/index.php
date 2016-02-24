@@ -15,58 +15,58 @@
                 <div class="col-md-4" style="border:1px solid #ddd;">
                     <h3 style="text-align: center">KELAS 7</h3>
                     <table class="table table-striped">
-                        <tr><td><a href="download/34.html"><div>Alquran dan terjemahannya </div></a></td></tr>
-                        <tr><td><a href="download/40.html"><div>Bahasa Arab</div></a></td></tr>
-                        <tr><td><a href="download/4.html"><div>Bahasa Indonesia</div></a></td></tr>
-                        <tr><td><a href="download/8.html"><div>Bahasa Inggris</div></a></td></tr>
-                        <tr><td><a href="download/37.html"><div>Bahasa Jawa</div></a></td></tr>
-                        <tr><td><a href="download/6.html"><div>Ilmu Pengetahuan Alam</div></td></tr>
-                        <tr><td><a href="download/7.html"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
-                        <tr><td><a href="download/5.html"><div>Matematika</div></a></td></tr>
-                        <tr><td><a href="download/2.html"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
-                        <tr><td><a href="download/3.html"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
-                        <tr><td><a href="download/10.html"><div>Penjaskes</div></a></td></tr>
-                        <tr><td><a href="download/11.html"><div>Prakarya</div></a></td></tr>
-                        <tr><td><a href="download/9.html"><div>Seni Budaya</div></a></td></tr>
-                        <tr><td><a href="download/43.html"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
+                        <tr><td><a href="unduh/34.html"><div>Alquran dan terjemahannya </div></a></td></tr>
+                        <tr><td><a href="unduh/40.html"><div>Bahasa Arab</div></a></td></tr>
+                        <tr><td><a href="unduh/4.html"><div>Bahasa Indonesia</div></a></td></tr>
+                        <tr><td><a href="unduh/8.html"><div>Bahasa Inggris</div></a></td></tr>
+                        <tr><td><a href="unduh/37.html"><div>Bahasa Jawa</div></a></td></tr>
+                        <tr><td><a href="unduh/6.html"><div>Ilmu Pengetahuan Alam</div></td></tr>
+                        <tr><td><a href="unduh/7.html"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
+                        <tr><td><a href="unduh/5.html"><div>Matematika</div></a></td></tr>
+                        <tr><td><a href="unduh/2.html"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
+                        <tr><td><a href="unduh/3.html"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
+                        <tr><td><a href="unduh/10.html"><div>Penjaskes</div></a></td></tr>
+                        <tr><td><a href="unduh/11.html"><div>Prakarya</div></a></td></tr>
+                        <tr><td><a href="unduh/9.html"><div>Seni Budaya</div></a></td></tr>
+                        <tr><td><a href="unduh/43.html"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
                     </table>
                 </div>
                 <div class="col-md-4" style="border:1px solid #ddd;">
                     <h3 style="text-align: center">KELAS 8</h3>
                     <table class="table table-striped">
-                        <tr><td><a href="download/35.html"><div>Alquran dan terjemahannya </div></a></td></tr>
-                        <tr><td><a href="download/41.html"><div>Bahasa Arab</div></a></td></tr>
-                        <tr><td><a href="download/15.html"><div>Bahasa Indonesia</div></a></td></tr>
-                        <tr><td><a href="download/19.html"><div>Bahasa Inggris</div></a></td></tr>
-                        <tr><td><a href="download/38.html"><div>Bahasa Jawa</div></a></td></tr>
-                        <tr><td><a href="download/17.html"><div>Ilmu Pengetahuan Alam</div></td></tr>
-                        <tr><td><a href="download/18.html"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
-                        <tr><td><a href="download/16.html"><div>Matematika</div></a></td></tr>
-                        <tr><td><a href="download/13.html"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
-                        <tr><td><a href="download/14.html"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
-                        <tr><td><a href="download/21.html"><div>Penjaskes</div></a></td></tr>
-                        <tr><td><a href="download/22.html"><div>Prakarya</div></a></td></tr>
-                        <tr><td><a href="download/20.html"><div>Seni Budaya</div></a></td></tr>
-                        <tr><td><a href="download/44.html"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
+                        <tr><td><a href="unduh/35.html"><div>Alquran dan terjemahannya </div></a></td></tr>
+                        <tr><td><a href="unduh/41.html"><div>Bahasa Arab</div></a></td></tr>
+                        <tr><td><a href="unduh/15.html"><div>Bahasa Indonesia</div></a></td></tr>
+                        <tr><td><a href="unduh/19.html"><div>Bahasa Inggris</div></a></td></tr>
+                        <tr><td><a href="unduh/38.html"><div>Bahasa Jawa</div></a></td></tr>
+                        <tr><td><a href="unduh/17.html"><div>Ilmu Pengetahuan Alam</div></td></tr>
+                        <tr><td><a href="unduh/18.html"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
+                        <tr><td><a href="unduh/16.html"><div>Matematika</div></a></td></tr>
+                        <tr><td><a href="unduh/13.html"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
+                        <tr><td><a href="unduh/14.html"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
+                        <tr><td><a href="unduh/21.html"><div>Penjaskes</div></a></td></tr>
+                        <tr><td><a href="unduh/22.html"><div>Prakarya</div></a></td></tr>
+                        <tr><td><a href="unduh/20.html"><div>Seni Budaya</div></a></td></tr>
+                        <tr><td><a href="unduh/44.html"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
                     </table>
                 </div>
                 <div class="col-md-4" style="border:1px solid #ddd;">
                     <h3 style="text-align: center">KELAS 9</h3>
                     <table class="table table-striped">
-                        <tr><td><a href="download/36.html"><div>Alquran dan terjemahannya </div></a></td></tr>
-                        <tr><td><a href="download/42.html"><div>Bahasa Arab</div></a></td></tr>
-                        <tr><td><a href="download/26.html"><div>Bahasa Indonesia</div></a></td></tr>
-                        <tr><td><a href="download/30.html"><div>Bahasa Inggris</div></a></td></tr>
-                        <tr><td><a href="download/39.html"><div>Bahasa Jawa</div></a></td></tr>
-                        <tr><td><a href="download/28.html"><div>Ilmu Pengetahuan Alam</div></td></tr>
-                        <tr><td><a href="download/29.html"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
-                        <tr><td><a href="download/27.html"><div>Matematika</div></a></td></tr>
-                        <tr><td><a href="download/24.html"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
-                        <tr><td><a href="download/25.html"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
-                        <tr><td><a href="download/32.html"><div>Penjaskes</div></a></td></tr>
-                        <tr><td><a href="download/33.html"><div>Prakarya</div></a></td></tr>
-                        <tr><td><a href="download/31.html"><div>Seni Budaya</div></a></td></tr>
-                        <tr><td><a href="download/45.html"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
+                        <tr><td><a href="unduh/36.html"><div>Alquran dan terjemahannya </div></a></td></tr>
+                        <tr><td><a href="unduh/42.html"><div>Bahasa Arab</div></a></td></tr>
+                        <tr><td><a href="unduh/26.html"><div>Bahasa Indonesia</div></a></td></tr>
+                        <tr><td><a href="unduh/30.html"><div>Bahasa Inggris</div></a></td></tr>
+                        <tr><td><a href="unduh/39.html"><div>Bahasa Jawa</div></a></td></tr>
+                        <tr><td><a href="unduh/28.html"><div>Ilmu Pengetahuan Alam</div></td></tr>
+                        <tr><td><a href="unduh/29.html"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
+                        <tr><td><a href="unduh/27.html"><div>Matematika</div></a></td></tr>
+                        <tr><td><a href="unduh/24.html"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
+                        <tr><td><a href="unduh/25.html"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
+                        <tr><td><a href="unduh/32.html"><div>Penjaskes</div></a></td></tr>
+                        <tr><td><a href="unduh/33.html"><div>Prakarya</div></a></td></tr>
+                        <tr><td><a href="unduh/31.html"><div>Seni Budaya</div></a></td></tr>
+                        <tr><td><a href="unduh/45.html"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
                     </table>
                 </div>
             </div>
