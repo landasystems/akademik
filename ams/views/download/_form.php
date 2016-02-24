@@ -108,7 +108,6 @@
                     <ul>
                         <li>Untuk melakukan multiple upload file, drag foto secara bersamaan ke dalam area tombol Upload</li>
                         <li>Extensi yang diperbolehkan adalah <span class="label label-info">zip, rar, doc, docx, pdf, ppt, xls, mp3, mp4, jpeg, jpg, png</span></li>
-                        <li>Thumbnail foto akan dicreate secara otomatis oleh systems</li>
                     </ul>
                 </div>';
         }

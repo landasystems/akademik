@@ -1,5 +1,6 @@
 <?php
-$this->setPageTitle('Add Document');
+$modelCat = DownloadCategory::model()->findByPk($model->download_category_id);
+$this->setPageTitle('Upload Dokumen - ' . $modelCat->name);
 
 
 ?>
@@ -14,7 +15,6 @@ $this->beginWidget('zii.widgets.CPortlet', array(
 $this->widget('bootstrap.widgets.TbMenu', array(
 	'type'=>'pills',
 	'items'=>array(
-		//array('label'=>'Tambah', 'icon'=>'icon-plus', 'url'=>Yii::app()->controller->createUrl('create'),'active'=>true, 'linkOptions'=>array()),
              array('label'=>'Daftar', 'icon'=>'icon-th-list', 'url'=>Yii::app()->controller->createUrl('downloadCategory/index'), 'linkOptions'=>array()),
 	),
 ));

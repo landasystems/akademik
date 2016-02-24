@@ -1,100 +1,62 @@
 <?php
 $this->setPageTitle('Dokumen Folder');
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-    $('.search-form').slideToggle('fast');
-    return false;
-});
-$('.search-form form').submit(function(){
-    $.fn.yiiGridView.update('download-category-grid', {
-        data: $(this).serialize()
-    });
-    return false;
-});
-");
 ?>
-
-<?php
-$this->beginWidget('zii.widgets.CPortlet', array(
-    'htmlOptions' => array(
-        'class' => ''
-    )
-));
-
-$this->widget('bootstrap.widgets.TbMenu', array(
-    'type' => 'pills',
-    'items' => array(
-        array('label' => 'Daftar', 'icon' => 'icon-th-list', 'url' => Yii::app()->controller->createUrl('index'), 'active' => true, 'linkOptions' => array()),
-        array('label' => 'Pencarian', 'icon' => 'icon-search', 'url' => '#', 'linkOptions' => array('class' => 'search-button')),
-    ),
-));
-$this->endWidget();
-?>
-
-
-
-<div class="search-form" style="display:none">
-<?php
-$this->renderPartial('_search', array(
-    'model' => $model,
-));
-?>
-</div><!-- search-form -->
-
-
-<?php
-$buton = '';
-
-if (landa()->checkAccess('Download', 'r'))
-    $buton .= '{view}';
-
-if (landa()->checkAccess('Download', 'u'))
-    $buton .= '{update} ';
-
-if (landa()->checkAccess('Download', 'd'))
-    $buton .= '{delete}';
-
-$this->widget('bootstrap.widgets.TbGridView', array(
-    'id' => 'download-category-grid',
-    'dataProvider' => $model->search(),
-    'type' => 'striped bordered condensed',
-    'template' => '{summary}{pager}{items}{pager}',
-    'columns' => array(
-        array(
-            'class' => 'CLinkColumn',
-            'labelExpression' => '$data->nestedname',
-            'urlExpression' => 'Yii::app()->createUrl("download/create",array("id"=>$data->id))',
-            'header' => 'Category Name',
-            'htmlOptions' => array('style' => 'text-align: left;')
-        ),
-        array(
-            'class' => 'bootstrap.widgets.TbButtonColumn',
-            'template' => $buton,
-            'buttons' => array(
-                'view' => array(
-                    'label' => 'Lihat',
-                    'url' => 'Yii::app()->createUrl("download/create",array("id"=>$data->id))',
-                    'options' => array(
-                        'class' => 'btn btn-small view'
-                    )
-                ),
-                'update' => array(
-                    'label' => 'Edit',
-                    'options' => array(
-                        'class' => 'btn btn-small update'
-                    )
-                ),
-                'delete' => array(
-                    'label' => 'Hapus',
-                    'options' => array(
-                        'class' => 'btn btn-small delete'
-                    )
-                )
-            ),
-            'htmlOptions' => array('style' => 'width: 125px'),
-        )
-    ),
-));
-?>
-
+<div class="row-fluid">
+    <div class="span4 img-polaroid">
+        <h3 style="text-align: center">KELAS 7</h3>
+        <table class="table table-striped">
+            <tr><td><a href="<?= bu('download/create/34') ?>"><div>Alquran dan terjemahannya </div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/40') ?>"><div>Bahasa Arab</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/4') ?>"><div>Bahasa Indonesia</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/8') ?>"><div>Bahasa Inggris</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/37') ?>"><div>Bahasa Jawa</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/6') ?>"><div>Ilmu Pengetahuan Alam</div></td></tr>
+            <tr><td><a href="<?= bu('download/create/7') ?>"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/5') ?>"><div>Matematika</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/2') ?>"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/3') ?>"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/10') ?>"><div>Penjaskes</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/11') ?>"><div>Prakarya</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/9') ?>"><div>Seni Budaya</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/43') ?>"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
+        </table>
+    </div>
+    <div class="span4 img-polaroid">
+        <h3 style="text-align: center">KELAS 8</h3>
+        <table class="table table-striped">
+            <tr><td><a href="<?= bu('download/create/35') ?>"><div>Alquran dan terjemahannya </div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/41') ?>"><div>Bahasa Arab</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/15') ?>"><div>Bahasa Indonesia</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/19') ?>"><div>Bahasa Inggris</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/38') ?>"><div>Bahasa Jawa</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/17') ?>"><div>Ilmu Pengetahuan Alam</div></td></tr>
+            <tr><td><a href="<?= bu('download/create/18') ?>"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/16') ?>"><div>Matematika</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/13') ?>"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/14') ?>"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/21') ?>"><div>Penjaskes</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/22') ?>"><div>Prakarya</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/20') ?>"><div>Seni Budaya</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/44') ?>"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
+        </table>
+    </div>
+    <div class="span4 img-polaroid">
+        <h3 style="text-align: center">KELAS 9</h3>
+        <table class="table table-striped">
+            <tr><td><a href="<?= bu('download/create/36') ?>"><div>Alquran dan terjemahannya </div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/42') ?>"><div>Bahasa Arab</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/26') ?>"><div>Bahasa Indonesia</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/30') ?>"><div>Bahasa Inggris</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/39') ?>"><div>Bahasa Jawa</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/28') ?>"><div>Ilmu Pengetahuan Alam</div></td></tr>
+            <tr><td><a href="<?= bu('download/create/29') ?>"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/27') ?>"><div>Matematika</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/24') ?>"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/25') ?>"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/32') ?>"><div>Penjaskes</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/33') ?>"><div>Prakarya</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/31') ?>"><div>Seni Budaya</div></a></td></tr>
+            <tr><td><a href="<?= bu('download/create/45') ?>"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
+        </table>
+    </div>
+</div>

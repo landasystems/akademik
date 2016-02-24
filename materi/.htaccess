@@ -1,0 +1,5 @@
+RewriteEngine on
+#RewriteBase /landa.co.id
+RewriteRule ^index.html$                      index.php [L]
+RewriteRule ^download/([0-9]+)\.html$         download.php?id=$1
+

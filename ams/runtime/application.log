@@ -2940,3 +2940,119 @@ Stack trace:
 REQUEST_URI=/akademik/absensi/images/favicon.png
 HTTP_REFERER=http://localhost/akademik/absensi/css/style.css
 ---
+2016/02/23 11:14:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/site/1-150x150-smp-plus-al-kautsar.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/site/1-1...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/site/1-150x150-smp-plus-al-kautsar.jpg
+HTTP_REFERER=http://localhost/akademik/site/login.html
+---
+2016/02/23 11:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/site/1-150x150-smp-plus-al-kautsar.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/site/1-1...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/site/1-150x150-smp-plus-al-kautsar.jpg
+HTTP_REFERER=http://localhost/akademik/site/login.html
+---
+2016/02/23 11:15:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/site/1-150x150-smp-plus-al-kautsar.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/site/1-1...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/site/1-150x150-smp-plus-al-kautsar.jpg
+HTTP_REFERER=http://localhost/akademik/site/login.html
+---
+2016/02/23 11:15:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/site/1-150x150-smp-plus-al-kautsar.jpg".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('images/site/1-1...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/images/site/1-150x150-smp-plus-al-kautsar.jpg
+HTTP_REFERER=http://localhost/akademik/site/login.html
+---
+2016/02/23 11:27:22 [error] [php] rename(images/download/kelas-9/pai/,images/download/vii/pendidikan-agama-dan-budi-pekerti/): No such file or directory (/var/www/akademik/ams/controllers/DownloadCategoryController.php:89)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/akademik/ams/lib/yii/web/CController.php(286): DownloadCategoryController->runAction()
+#4 /var/www/akademik/ams/lib/yii/web/CController.php(265): DownloadCategoryController->runActionWithFilters()
+#5 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): DownloadCategoryController->run()
+#6 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/downloadCategory/update/193.html
+in /var/www/akademik/ams/controllers/DownloadCategoryController.php (89)
+in /var/www/akademik/index.php (17)
+2016/02/23 11:29:25 [error] [php] mkdir(): File exists (/var/www/akademik/ams/controllers/DownloadCategoryController.php:51)
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/akademik/ams/lib/yii/web/CController.php(286): DownloadCategoryController->runAction()
+#2 /var/www/akademik/ams/lib/yii/web/CController.php(265): DownloadCategoryController->runActionWithFilters()
+#3 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): DownloadCategoryController->run()
+#4 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/akademik/index.php(17): CWebApplication->run()
+REQUEST_URI=/akademik/downloadCategory/create.html
+in /var/www/akademik/ams/controllers/DownloadCategoryController.php (51)
+in /var/www/akademik/index.php (17)
+2016/02/23 18:36:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/23 21:59:20 [error] [exception.CException] exception 'CException' with message 'DownloadCategory and its behaviors do not have a method or closure named "loadModel".' in /var/www/akademik/ams/lib/yii/base/CComponent.php:266
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/db/ar/CActiveRecord.php(227): CComponent->__call('loadModel', Array)
+#1 /var/www/akademik/ams/views/download/create.php(2): CActiveRecord->__call('loadModel', Array)
+#2 /var/www/akademik/ams/views/download/create.php(2): DownloadCategory->loadModel('34')
+#3 /var/www/akademik/ams/lib/yii/web/CBaseController.php(126): require('/var/www/akadem...')
+#4 /var/www/akademik/ams/extensions/yii-debug-toolbar/YiiDebugViewRenderer.php(40): CBaseController->renderInternal('/var/www/akadem...', Array, true)
+#5 /var/www/akademik/ams/lib/yii/web/CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(DownloadController), '/var/www/akadem...', Array, true)
+#6 /var/www/akademik/ams/lib/yii/web/CController.php(869): CBaseController->renderFile('/var/www/akadem...', Array, true)
+#7 /var/www/akademik/ams/lib/yii/web/CController.php(782): CController->renderPartial('create', Array, true)
+#8 /var/www/akademik/ams/controllers/DownloadController.php(43): CController->render('create', Array)
+#9 /var/www/akademik/ams/lib/yii/web/actions/CInlineAction.php(49): DownloadController->actionCreate()
+#10 /var/www/akademik/ams/lib/yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/akademik/ams/lib/yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/akademik/ams/lib/yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(282): CController->run('create')
+#14 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('download/create')
+#15 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/akademik/index.php(17): CApplication->run()
+#17 {main}
+REQUEST_URI=/akademik/download/create/34
+HTTP_REFERER=http://localhost/akademik/downloadCategory.html
+---
+2016/02/23 22:00:07 [error] ['images/download/kelas-7/alquran-dan-terjemahannya//Screenshot from 2016-02-23 21:06:15.png'] Landa Var Dump
+in /var/www/akademik/ams/globals.php (6)
+in /var/www/akademik/ams/controllers/DownloadController.php (77)
+in /var/www/akademik/index.php (17)
+2016/02/23 22:03:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
+2016/02/24 08:47:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/CopernicusWeb_BookItalic.woff".' in /var/www/akademik/ams/lib/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/akademik/ams/lib/yii/web/CWebApplication.php(141): CWebApplication->runController('fonts/Copernicu...')
+#1 /var/www/akademik/ams/lib/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/akademik/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/akademik/fonts/CopernicusWeb_BookItalic.woff
+HTTP_REFERER=http://localhost/akademik/style.css
+---
