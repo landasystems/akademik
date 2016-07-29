@@ -109,7 +109,7 @@ class Auth extends CActiveRecord {
         return array(
             array('label' => 'Dashboard', 'url' => array('/dashboard')),
             array('label' => 'Dokumen', 'url' => array('/downloadCategory')),
-            array('visible' =>user()->roles_id == -1,'label' => 'Akademik', 'url' => array('/User'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
+            array('visible' =>user()->roles_id != 1,'label' => 'Akademik', 'url' => array('/User'), 'submenuOptions' => array('class' => 'sub'), 'items' => array(
                     array('auth_id' => 'User', 'label' => 'Guru', 'url' => array('/user'), 'crud' => array("r" => 1)),
                     array('auth_id' => 'Student', 'label' => 'Murid', 'url' => url('user/student'), 'crud' => array("r" => 1)),
                     array('auth_id' => 'SchoolYear', 'label' => 'Tahun Ajaran', 'url' => array('/schoolYear'), 'crud' => array("r" => 1)),

@@ -15,7 +15,7 @@ $dataKategori = mysql_fetch_array($sql);
     </head>
     <body style="background:linear-gradient(to bottom,#134c85 0,#5073bf 100%);">
         <div class="container" style="background-color:white;min-height: 700px">
-            <center><img src="../logo.png" style="padding:5px"/></center>
+            <center><img src="../logo.png" style="width:30%"/></center>
             <div class="row-fluid">
                 <div class="col-md-12" style="border:1px solid #ddd;">
                     <a href="../index.html" class="btn btn-primary pull-left" style="margin-top: 15px;"><span class="glyphicon glyphicon-backward"></span> Kembali</a>
@@ -28,7 +28,7 @@ $dataKategori = mysql_fetch_array($sql);
                             <th style="text-align: center;width:30px">#</th>
                         </tr>
                         <?php
-                        $sql = mysql_query("SELECT * FROM download INNER JOIN download_category ON download.download_category_id = download_category.id LEFT JOIN user on user.id = download.created_user_id"
+                        $sql = mysql_query("SELECT download.url, download.created, user.name, download_category.path  FROM download INNER JOIN download_category ON download.download_category_id = download_category.id LEFT JOIN user on user.id = download.created_user_id"
                                 . " where download.download_category_id=". $_GET['id']);
                         while ($data = mysql_fetch_array($sql)) {
                             ?>

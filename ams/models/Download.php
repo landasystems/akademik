@@ -121,7 +121,7 @@ class Download extends CActiveRecord {
         if (empty($this->DownloadCategory->path)) {
             return '#';
         } else {
-            return param('urlImg') . $this->DownloadCategory->path . $this->url;
+            return  '../../images/'.$this->DownloadCategory->path . $this->url;
         }
     }
     

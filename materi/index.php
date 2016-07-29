@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+include'config.php';
+error_reporting();
+?>
 <html>
     <head>
         <title>SMP Plus Alkautsar Malang - Download Materi</title>
@@ -10,63 +13,53 @@
     </head>
     <body style="background:linear-gradient(to bottom,#134c85 0,#5073bf 100%);">
         <div class="container" style="background-color:white">
-            <center><img src="logo.png" style="padding:5px"/></center>
+            <center><a href=""><img src="logo.png" style="padding:5px; width: 30%"/></a></center>
+
+
+            <div class="row-fluid">
+                <div class="col-md-12" style="border:1px solid #ddd;">
+                    <a href="../index.html" class="btn btn-primary pull-left" style="margin-top: 15px;margin-bottom: 10px"><span class="glyphicon glyphicon-backward"></span> Kembali</a>
+                    <br>
+                </div>
+            </div>
             <div class="row-fluid">
                 <div class="col-md-4" style="border:1px solid #ddd;">
                     <h3 style="text-align: center">KELAS 7</h3>
                     <table class="table table-striped">
-                        <tr><td><a href="unduh/34.html"><div>Alquran dan terjemahannya </div></a></td></tr>
-                        <tr><td><a href="unduh/40.html"><div>Bahasa Arab</div></a></td></tr>
-                        <tr><td><a href="unduh/4.html"><div>Bahasa Indonesia</div></a></td></tr>
-                        <tr><td><a href="unduh/8.html"><div>Bahasa Inggris</div></a></td></tr>
-                        <tr><td><a href="unduh/37.html"><div>Bahasa Jawa</div></a></td></tr>
-                        <tr><td><a href="unduh/6.html"><div>Ilmu Pengetahuan Alam</div></td></tr>
-                        <tr><td><a href="unduh/7.html"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
-                        <tr><td><a href="unduh/5.html"><div>Matematika</div></a></td></tr>
-                        <tr><td><a href="unduh/2.html"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
-                        <tr><td><a href="unduh/3.html"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
-                        <tr><td><a href="unduh/10.html"><div>Penjaskes</div></a></td></tr>
-                        <tr><td><a href="unduh/11.html"><div>Prakarya</div></a></td></tr>
-                        <tr><td><a href="unduh/9.html"><div>Seni Budaya</div></a></td></tr>
-                        <tr><td><a href="unduh/43.html"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
+                        <?php
+                        $sql = mysql_query("SELECT * FROM download_category where parent_id=1 order by name asc");
+                        while ($data = mysql_fetch_array($sql)) {
+                            ?>
+                        <tr><td><a href="unduh/<?=$data['id']?>.html"><div><?=$data['name']?> </div></a></td></tr>
+                           <?php
+                        }
+                        ?>
                     </table>
                 </div>
                 <div class="col-md-4" style="border:1px solid #ddd;">
                     <h3 style="text-align: center">KELAS 8</h3>
                     <table class="table table-striped">
-                        <tr><td><a href="unduh/35.html"><div>Alquran dan terjemahannya </div></a></td></tr>
-                        <tr><td><a href="unduh/41.html"><div>Bahasa Arab</div></a></td></tr>
-                        <tr><td><a href="unduh/15.html"><div>Bahasa Indonesia</div></a></td></tr>
-                        <tr><td><a href="unduh/19.html"><div>Bahasa Inggris</div></a></td></tr>
-                        <tr><td><a href="unduh/38.html"><div>Bahasa Jawa</div></a></td></tr>
-                        <tr><td><a href="unduh/17.html"><div>Ilmu Pengetahuan Alam</div></td></tr>
-                        <tr><td><a href="unduh/18.html"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
-                        <tr><td><a href="unduh/16.html"><div>Matematika</div></a></td></tr>
-                        <tr><td><a href="unduh/13.html"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
-                        <tr><td><a href="unduh/14.html"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
-                        <tr><td><a href="unduh/21.html"><div>Penjaskes</div></a></td></tr>
-                        <tr><td><a href="unduh/22.html"><div>Prakarya</div></a></td></tr>
-                        <tr><td><a href="unduh/20.html"><div>Seni Budaya</div></a></td></tr>
-                        <tr><td><a href="unduh/44.html"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
+                    <?php
+                        $sql2 = mysql_query("SELECT * FROM download_category where parent_id=13 order by name asc");
+                        while ($data = mysql_fetch_array($sql2)) {
+                            ?>
+                        <tr><td><a href="unduh/<?=$data['id']?>.html"><div><?=$data['name']?> </div></a></td></tr>
+                           <?php
+                        }
+                        ?>
                     </table>
                 </div>
                 <div class="col-md-4" style="border:1px solid #ddd;">
                     <h3 style="text-align: center">KELAS 9</h3>
                     <table class="table table-striped">
-                        <tr><td><a href="unduh/36.html"><div>Alquran dan terjemahannya </div></a></td></tr>
-                        <tr><td><a href="unduh/42.html"><div>Bahasa Arab</div></a></td></tr>
-                        <tr><td><a href="unduh/26.html"><div>Bahasa Indonesia</div></a></td></tr>
-                        <tr><td><a href="unduh/30.html"><div>Bahasa Inggris</div></a></td></tr>
-                        <tr><td><a href="unduh/39.html"><div>Bahasa Jawa</div></a></td></tr>
-                        <tr><td><a href="unduh/28.html"><div>Ilmu Pengetahuan Alam</div></td></tr>
-                        <tr><td><a href="unduh/29.html"><div>Ilmu Pengetahuan Sosial</div></a></td></tr>
-                        <tr><td><a href="unduh/27.html"><div>Matematika</div></a></td></tr>
-                        <tr><td><a href="unduh/24.html"><div>Pendidikan Agama dan Budi Pekerti</div></a></td></tr>
-                        <tr><td><a href="unduh/25.html"><div>Pendidikan Pancasila dan Kewarganegaraan</div></a></td></tr>
-                        <tr><td><a href="unduh/32.html"><div>Penjaskes</div></a></td></tr>
-                        <tr><td><a href="unduh/33.html"><div>Prakarya</div></a></td></tr>
-                        <tr><td><a href="unduh/31.html"><div>Seni Budaya</div></a></td></tr>
-                        <tr><td><a href="unduh/45.html"><div>Teknologi Informasi Komunikasi</div></a></td></tr>
+                      <?php
+                        $sql3 = mysql_query("SELECT * FROM download_category where parent_id=25 order by name asc");
+                        while ($data = mysql_fetch_array($sql3)) {
+                            ?>
+                        <tr><td><a href="unduh/<?=$data['id']?>.html"><div><?=$data['name']?> </div></a></td></tr>
+                           <?php
+                        }
+                        ?>    
                     </table>
                 </div>
             </div>

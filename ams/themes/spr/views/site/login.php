@@ -27,10 +27,10 @@ $this->pageTitle = Yii::app()->name . ' - Login';
 </style>
 
 
+
 <?php
 $form = $this->beginWidget('CActiveForm', array(
     'id' => 'login-form',
-//    'enableClientValidation' => true,
     'clientOptions' => array(
         'validateOnSubmit' => true,
         'type' => 'horizontal',

@@ -48,7 +48,7 @@ class DownloadCategoryController extends Controller {
             } else {
                 $model->attributes = $_POST['DownloadCategory'];
                 $model->path = 'download/' . Yii::app()->landa->urlParsing($model->name) . '/';
-                mkdir('images/' . $model->path, 0755);
+                mkdir('images/' . $model->path, 0777);
                 if ($model->saveNode())
                     $this->redirect(array('view', 'id' => $model->id));
             }
